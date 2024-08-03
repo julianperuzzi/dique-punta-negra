@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Parallax } from 'react-parallax';
-import imgParadores from '../assets/imgHome/presa-dique-punta-negra-san-juan-argentina.avif'; // Ajusta la ruta según la ubicación de tu imagen
+import imgParadores from '../assets/imgDown/41144002791_79fae4d7c0_o.jpg'; // Ajusta la ruta según la ubicación de tu imagen
 import 'aos/dist/aos.css'; // Importa los estilos de AOS
 import AOS from 'aos'; // Importa AOS
 
@@ -45,7 +45,7 @@ function ParadoresScreen() {
       strength={300}
       bgImageStyle={{ objectFit: "cover", width: "100%" }}
     >
-      <div className="bg-black bg-opacity-30 dark:bg-opacity-70 backdrop-blur-sm min-h-screen flex items-center justify-center">
+      <div className="bg-black bg-opacity-50 dark:bg-opacity-70 backdrop-blur-sm min-h-screen flex items-center justify-center">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold mb-6 text-center text-white" data-aos="fade-up">Paradores</h2>
           <div className="flex flex-wrap gap-6 justify-center mx-4 md:mx-0 my-8">

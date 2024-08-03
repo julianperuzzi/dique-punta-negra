@@ -62,7 +62,7 @@ function ActivitiesScreen() {
       strength={200}
       bgImageStyle={{ objectFit: "cover", width: "100%" }}
     >
-      <div className="bg-black bg-opacity-30 dark:bg-opacity-70 backdrop-blur-sm min-h-screen flex items-center">
+      <div className="bg-black bg-opacity-50 dark:bg-opacity-70 backdrop-blur-sm min-h-screen flex items-center">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold my-6 text-center text-white">Actividades</h2>
           <div className="flex flex-wrap gap-6 mx-4 md:mx-0 my-8 ">

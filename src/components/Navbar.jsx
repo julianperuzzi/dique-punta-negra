@@ -12,11 +12,11 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
   };
 
   return (
-    <nav className="bg-pink-700 dark:bg-gray-800 shadow-lg fixed w-full z-10">
+    <nav className="bg-white dark:bg-gray-800 shadow-lg fixed w-full z-10">
       <div className="container mx-auto px-6 py-3 flex justify-between items-center">
         <Link
           to="/"
-          className="text-white dark:text-gray-200 hover:text-blue-100 dark:hover:text-rose-300 transition duration-300 text-2xl font-bold"
+          className="text-rose-500 dark:text-gray-200 hover:text-rose-700 dark:hover:text-rose-300 transition duration-300 text-2xl font-bold"
         >
           Dique Punta Negra
         </Link>
@@ -24,19 +24,19 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
         <div className="hidden md:flex space-x-10 font-semibold">
           <Link
             to="/"
-            className="text-white dark:text-gray-200 hover:text-blue-100 dark:hover:text-blue-300 transition duration-300"
+            className="text-rose-500 dark:text-gray-200 hover:text-rose-700 dark:hover:text-rose-400 transition duration-300"
           >
             Inicio
           </Link>
           <Link
             to="/Prestadores"
-            className="text-white dark:text-gray-200 hover:text-blue-100 dark:hover:text-blue-300 transition duration-300"
+            className="text-rose-500 dark:text-gray-200 hover:text-rose-700 dark:hover:text-rose-400 transition duration-300"
           >
             Prestadores
           </Link>
           <Link
             to="/PrimerosAuxilios"
-            className="text-white dark:text-gray-200 hover:text-blue-100 dark:hover:text-blue-300 transition duration-300"
+            className="text-rose-500 dark:text-gray-200 hover:text-rose-700 dark:hover:text-rose-400 transition duration-300"
           >
             P. Auxilios
           </Link>
@@ -45,7 +45,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
         <div className="flex items-center space-x-4">
           <button
             onClick={toggleDarkMode}
-            className="bg-pink-900 dark:bg-pink-600 hover:bg-pink-300 dark:hover:bg-pink-300 text-white dark:text-white rounded-full p-2 transition duration-300"
+            className="bg-rose-600 dark:bg-pink-600 hover:bg-pink-300 dark:hover:bg-pink-300 text-white dark:text-white rounded-full p-2 transition duration-300"
           >
             {darkMode ? <FaSun size={20} /> : <FaMoon size={20} />}
           </button>

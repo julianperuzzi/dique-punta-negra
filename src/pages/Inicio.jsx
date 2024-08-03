@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 import ActivitiesScreen from '../components/ActivitiesScreen';
 import ParadoresScreen from '../components/ParadoresScreen';
 import ResourcesScreen from '../components/ResourcesScreen';
-import ContactDirectoryScreen from '../components/ContactDirectoryScreen';
+import SafetySection from '../components/SafetySection';
 import PresentationScreen from '../components/PresentationScreen';
 
 function Inicio() {
@@ -22,14 +22,18 @@ function Inicio() {
       {/* Información de Actividades */}
       <ActivitiesScreen />
 
-      {/* Información de Paradores */}
-      <ParadoresScreen />
-
+      
       {/* Recursos */}
       <ResourcesScreen />
 
+
+      {/* Información de Paradores */}
+      <ParadoresScreen />
+
+      
+
       {/* Directorio de Contactos */}
-      <ContactDirectoryScreen />
+      <SafetySection />
     </div>
   );
 }
