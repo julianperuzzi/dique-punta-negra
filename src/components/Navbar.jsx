@@ -16,9 +16,9 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
       <div className="container mx-auto px-6 py-3 flex justify-between items-center">
         <Link
           to="/"
-          className="text-rose-500 dark:text-gray-200 hover:text-rose-700 dark:hover:text-rose-300 transition duration-300 text-2xl font-bold"
+          className="text-rose-500 dark:text-gray-200 hover:text-rose-700 dark:hover:text-rose-300 transition duration-300 text-2xl font-bold flex flex-row"
         >
-          Dique Punta Negra
+          <span className='hidden md:block pr-2'>Dique</span>Punta Negra
         </Link>
 
         <div className="hidden md:flex space-x-10 font-semibold">
@@ -51,7 +51,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
           </button>
 
           <button onClick={handleToggle} className="md:hidden focus:outline-none">
-            {isOpen ? <FaTimes size={24} className="text-white dark:text-white" /> : <FaBars size={24} className="text-white dark:text-white" />}
+            {isOpen ? <FaTimes size={24} className="text-rose-400 dark:text-white" /> : <FaBars size={24} className="text-rose-400 dark:text-white" />}
           </button>
         </div>
 
@@ -60,21 +60,21 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             <div className="flex flex-col space-y-4 py-4">
               <Link
                 to="/"
-                className="text-white dark:text-gray-200 hover:text-blue-100 dark:hover:text-blue-300 transition duration-300 px-4 py-2"
+                className="text-white dark:text-rose-200 hover:text-rose-100 dark:hover:text-blue-300 transition duration-300 px-4 py-2"
                 onClick={() => setIsOpen(false)}
               >
                 Inicio
               </Link>
               <Link
                 to="/Prestadores"
-                className="text-white dark:text-gray-200 hover:text-blue-100 dark:hover:text-blue-300 transition duration-300 px-4 py-2"
+                className="text-white dark:text-rose-200 hover:text-rose-100 dark:hover:text-blue-300 transition duration-300 px-4 py-2"
                 onClick={() => setIsOpen(false)}
               >
                 Directorio
               </Link>
               <Link
                 to="/PrimerosAuxilios"
-                className="text-white dark:text-gray-200 hover:text-blue-100 dark:hover:text-blue-300 transition duration-300 px-4 py-2"
+                className="text-white dark:text-rose-200 hover:text-rose-100 dark:hover:text-blue-300 transition duration-300 px-4 py-2"
                 onClick={() => setIsOpen(false)}
               >
                 P. Auxilios

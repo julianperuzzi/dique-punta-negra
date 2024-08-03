@@ -49,7 +49,7 @@ function ActivitiesScreen() {
   };
 
   // Muestra solo los primeros 3 elementos en la vista móvil, o todos si showAll es true
-  const displayedActivities = showAll ? activities : activities.slice(0, 3);
+  const displayedActivities = showAll ? activities : activities.slice(0, 4);
 
   // Inicializa AOS
   React.useEffect(() => {
@@ -64,18 +64,18 @@ function ActivitiesScreen() {
     >
       <div className="bg-black bg-opacity-50 dark:bg-opacity-70 backdrop-blur-sm min-h-screen flex items-center">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold my-6 text-center text-white">Actividades</h2>
-          <div className="flex flex-wrap gap-6 mx-4 md:mx-0 my-8 ">
+          <h2 className="text-4xl font-bold my-6 text-center text-white bg-pink-600 w-full p-2 uppercase">Actividades</h2>
+          <div className="flex flex-wrap md:grid md:grid-cols-4 md:flex-none gap-6 mx-4 md:mx-0 my-8 ">
             {displayedActivities.map((activity, index) => (
               <div
                 key={index}
-                className="flex-1 min-w-[300px] bg-gray-100 p-6 shadow-lg flex flex-col justify-between"
+                className="flex-1 min-w-[300px] bg-white p-6 shadow-lg flex flex-col justify-between backdrop-blur-md"
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
               >
                 <div>
                   <h3 className="text-2xl font-semibold mb-4 text-pink-500">{activity.title}</h3>
-                  <p className='text-neutral-600'>{activity.description}</p>
+                  <p className='text-gray-700 mb-4'>{activity.description}</p>
                 </div>
                 <div>
                   <Link to="/prestadores" className="text-blue-500 hover:underline">Ir a Directorio de Prestadores</Link>

@@ -5,21 +5,19 @@ import imgNautica from '../assets/imgSeguridadNautica/imgComunicacion.jpeg';
 
 function SafetySection() {
   return (
-    <section className="relative">
-
-
-        <div className="bg-white dark:bg-slate-800 bg-opacity-90 dark:bg-opacity-95 backdrop-blur-sm h-screen flex items-center justify-center">
-          <div className="flex flex-col md:flex-row items-center md:mx-8 gap-6 justify-center text-center md:text-left">
-            <div className="md:w-1/2">
+    <section className="pt-16 bg-pink-600">
+        <div className="bg-white dark:bg-slate-800  dark:bg-opacity-95 backdrop-blur-sm min-h-screen flex items-center justify-center">
+          <div className="flex flex-col md:flex-row-reverse items-center md:mx-8 gap-6 justify-center text-center md:text-left">
+            <div className="md:w-1/2 bg-pink-600 md:max-h-[70vh] mx-auto">
               <img
                 src={imgNautica}
                 alt="Seguridad Náutica"
-                className="md:max-h-[70vh] mx-auto  shadow-lg"
+                className=" brightness-75 contrast-125 bg-pink-600 md:w-11/12 md:max-h-[70vh]"
               />
             </div>
 
-            <div className="container mx-auto md:w-1/2 p-4">
-              <h2 className="text-4xl font-bold mb-6 text-rose-500">Seguridad en el Dique</h2>
+            <div className="mx-auto md:w-1/2 p-4">
+              <h2 className="text-4xl font-bold mb-6 text-center text-white bg-rose-500 w-full p-2 uppercase">Seguridad en el Dique</h2>
               <p className="text-lg text-black dark:text-white/90 mb-6">
                 El Dique Punta Negra cuenta con un equipo de <span className="font-semibold text-rose-500 uppercase">Seguridad Náutica</span> dedicado a resguardar la seguridad de las personas tanto dentro como fuera del agua para el disfrute de todos.
               </p>

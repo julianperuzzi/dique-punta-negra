@@ -45,10 +45,11 @@ function ParadoresScreen() {
       strength={300}
       bgImageStyle={{ objectFit: "cover", width: "100%" }}
     >
-      <div className="bg-black bg-opacity-50 dark:bg-opacity-70 backdrop-blur-sm min-h-screen flex items-center justify-center">
+      <div className="bg-black bg-opacity-50 dark:bg-opacity-70 backdrop-blur-sm min-h-screen flex items-center justify-center py-10">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold mb-6 text-center text-white" data-aos="fade-up">Paradores</h2>
-          <div className="flex flex-wrap gap-6 justify-center mx-4 md:mx-0 my-8">
+          <h2 className="text-4xl font-bold mb-6 text-center text-white bg-pink-600 w-full p-2 uppercase" data-aos="fade-up">Paradores</h2>
+          <div className="flex flex-wrap md:grid md:grid-cols-2 md:flex-none
+           gap-6 justify-center mx-4 md:mx-0 my-8">
             {displayedParadores.map((parador, index) => (
               <div
                 key={index}

@@ -10,8 +10,8 @@ function ResourcesScreen() {
 
   return (
     <div className="bg-white py-12 px-6 text-black min-h-screen content-center">
-      <div className="container mx-auto" data-aos="fade-up">
-        <h2 className="text-4xl font-bold mb-10 text-center">Conoce Más</h2>
+      <div className="container mx-auto " data-aos="fade-up">
+        <h2 className="text-4xl font-bold mb-10 text-center text-pink-600 w-full p-2 uppercase">Conoce Más</h2>
 
         {/* Contenedor del mapa y la información */}
         <div className="flex flex-col lg:flex-row gap-8">
@@ -19,7 +19,7 @@ function ResourcesScreen() {
           <div className="md:w-2/3 text-left">
           
             {/* Nueva sección: Cómo llegar al dique */}
-            <h3 className="text-3xl font-semibold mb-4 bg-rose-500 px-3 py-2 text-white ">
+            <h3 className=" text-2xl font-semibold mb-4 bg-pink-600 px-3 py-1 text-white ">
               Cómo Llegar al Dique Punta Negra
             </h3>
             <p className="mb-4">
@@ -42,7 +42,7 @@ function ResourcesScreen() {
             </p>
 
             {/* Nueva sección: Información sobre embarcaciones */}
-            <h3 className="text-3xl font-semibold mt-8 mb-4 bg-rose-500 px-3 py-2 text-white">
+            <h3 className=" text-2xl font-semibold mt-8 mb-4 bg-pink-600 px-3 py-1 text-white">
               Información sobre Embarcaciones
             </h3>
             <p className="mb-4">
@@ -59,7 +59,7 @@ function ResourcesScreen() {
             
 
 
-            <h3 className="text-3xl font-semibold mt-8 bg-rose-500 px-3 py-2 text-white">
+            <h3 className=" text-2xl font-semibold mt-8 bg-pink-600 px-3 py-1 text-white">
               Área de Primeros Auxilios
             </h3>
             <p className="my-4">
