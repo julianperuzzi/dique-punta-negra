@@ -6,13 +6,13 @@ import imgNautica from '../assets/imgSeguridadNautica/imgComunicacion.jpeg';
 function SafetySection() {
   return (
     <section className="pt-16 bg-pink-600">
-        <div className="bg-white dark:bg-slate-800  dark:bg-opacity-95 backdrop-blur-sm min-h-screen flex items-center justify-center">
+        <div className="bg-white/95 dark:bg-slate-800  dark:bg-opacity-95 backdrop-blur-sm min-h-screen flex items-center justify-center">
           <div className="flex flex-col md:flex-row-reverse items-center md:mx-8 gap-6 justify-center text-center md:text-left">
             <div className="md:w-1/2 bg-pink-600 md:max-h-[70vh] mx-auto">
               <img
                 src={imgNautica}
                 alt="Seguridad Náutica"
-                className=" brightness-75 contrast-125 bg-pink-600 md:w-11/12 md:max-h-[70vh]"
+                className=" brightness-75 contrast-125 bg-rose-500 md:w-11/12 md:max-h-[70vh]"
               />
             </div>
 
