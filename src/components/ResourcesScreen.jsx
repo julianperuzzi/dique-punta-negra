@@ -25,7 +25,7 @@ function ResourcesScreen() {
             <p className="mb-4">
               El Dique Punta Negra está ubicado a unos pocos kilómetros de San
               Juan, Argentina. Puedes llegar tomando la Ruta Provincial
-              12 0 60. Tambien hay opciones de transporte público.
+              12 o 60. Tambien hay opciones de transporte público.
             </p>
             <p className="mb-4">
               Para más información precisa sobre rutas y horarios, te
