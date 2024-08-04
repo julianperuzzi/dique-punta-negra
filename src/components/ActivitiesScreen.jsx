@@ -78,7 +78,7 @@ function ActivitiesScreen() {
                   <p className='text-gray-700 mb-4'>{activity.description}</p>
                 </div>
                 <div>
-                  <Link to="/prestadores" className="text-blue-500 hover:underline">Ir a Directorio de Prestadores</Link>
+                  <Link to="/prestadores" className="text-rose-500 font-semibold hover:underline">Ir a Directorio de Prestadores</Link>
                 </div>
               </div>
             ))}
