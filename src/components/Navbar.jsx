@@ -40,6 +40,12 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
           >
             Embarcaciones
           </Link>
+          <Link
+            to="/clima"
+            className="text-rose-500 dark:text-gray-200 hover:text-rose-700 dark:hover:text-rose-400 transition duration-300"
+          >
+            Clima
+          </Link>
         </div>
 
         <div className="flex items-center space-x-4">
@@ -78,6 +84,13 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                 onClick={() => setIsOpen(false)}
               >
                 Embarcaciones
+              </Link>
+              <Link
+                to="/clima"
+                className="text-white dark:text-rose-200 hover:text-rose-100 dark:hover:text-blue-300 transition duration-300 px-4 py-2"
+                onClick={() => setIsOpen(false)}
+              >
+                Clima
               </Link>
             </div>
           </div>
