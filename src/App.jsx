@@ -10,7 +10,9 @@ import Inicio from './pages/Inicio';
 import Prestadores from './pages/Prestadores';
 import Embarcaciones from './pages/Embarcaciones';
 import Directorio from './pages/Directorio';
+import CondicionesClimaticas from './pages/CondicionesClimaticas';
 import NotFound from './pages/NotFound';
+
 
 function App() {
   const [darkMode, setDarkMode] = React.useState(false);
@@ -30,6 +32,7 @@ function App() {
             <Route path="/Prestadores" element={<Prestadores />} />
             <Route path='/Embarcaciones' element={<Embarcaciones />} />
             <Route path='/directorio' element={<Directorio />} />
+            <Route path='/Clima' element={<CondicionesClimaticas />} />
             <Route path='/*' element={<NotFound/>} />
           </Routes>
         
