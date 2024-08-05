@@ -9,9 +9,9 @@ function ResourcesScreen() {
   }, []);
 
   return (
-    <div className="bg-white py-12 px-6 text-black min-h-screen content-center">
+    <div className="bg-white py-12 px-6 text-black dark:bg-slate-800 dark:text-white min-h-screen content-center">
       <div className=" container  mx-auto " data-aos="fade-up">
-        <h2 className="text-4xl font-bold mb-10 text-center text-pink-600 w-full p-2 uppercase">Conoce Más</h2>
+        <h2 className="text-4xl font-bold mb-10 text-center text-pink-600 w-full p-2 uppercase dark:text-white">Conoce Más</h2>
 
         {/* Contenedor del mapa y la información */}
         <div className="flex flex-col lg:flex-row gap-8">
