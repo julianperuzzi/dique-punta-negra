@@ -5,10 +5,13 @@ import imgNautica from '../assets/imgSeguridadNautica/imgComunicacion.jpeg';
 
 function SafetySection() {
   return (
-    <section className="pt-16">
-        <div className="bg-white/95 dark:bg-slate-800  dark:bg-opacity-95 backdrop-blur-sm min-h-screen flex items-center justify-center">
+    <section className="">
+        <div className="bg-white/95 dark:bg-slate-800  dark:bg-opacity-95 backdrop-blur-sm min-h-screen flex items-center justify-center flex-col py-24">
+        <h2 className="text-4xl font-bold md:mb-6 text-center text-white bg-rose-500 w-full p-4 uppercase">Seguridad en el Dique</h2>
+
           <div className="flex flex-col md:flex-row-reverse items-center md:mx-8 gap-6 justify-center text-center md:text-left">
-            <div className="md:w-1/2 bg-pink-600 md:max-h-[70vh] mx-auto">
+            
+            <div className="md:w-1/2 md:max-h-[70vh] mx-auto ">
               <img
                 src={imgNautica}
                 alt="Seguridad Náutica"
@@ -17,7 +20,7 @@ function SafetySection() {
             </div>
 
             <div className="mx-auto md:w-1/2 p-4">
-              <h2 className="text-4xl font-bold mb-6 text-center text-white bg-rose-500 w-full p-2 uppercase">Seguridad en el Dique</h2>
+              
               <p className="text-lg text-black dark:text-white/90 mb-6">
                 El Dique Punta Negra cuenta con un equipo de <span className="font-semibold text-rose-500 uppercase">Seguridad Náutica</span> dedicado a resguardar la seguridad de las personas tanto dentro como fuera del agua para el disfrute de todos.
               </p>
