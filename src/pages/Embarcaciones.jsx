@@ -84,13 +84,13 @@ function Embarcaciones() {
         bgImageStyle={{ objectFit: "cover", width: "100%" }}
       >
         <div className="h-96 flex flex-col justify-center items-center bg-black bg-opacity-50 dark:bg-opacity-80 backdrop-blur-sm min-h-screen " >
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-2 text-center border-b-2 border-white pb-10 md:w-8/12 mx-4">
+          <h2 className="text-5xl md:text-6xl font-bold text-white mb-2 md:text-center text-left border-b-2 border-white pb-10 md:w-8/12 mx-4">
             Embarcaciones en el Dique Punta Negra
           </h2>
-          <h2 className="text-2xl text-white md:text-center mx-4 md:mx-0 text-center mt-10 " >
+          <h2 className="text-2xl text-white mx-4 md:mx-0  mt-10 border-l-2 pl-4 border-rose-600  md:border-none md:pl-0 text-left " >
             Conoce los requisitos para disfrutar de la navegación
           </h2>
-          <h2 className="text-3xl text-white text-center mt-16 font-bold uppercase" >
+          <h2 className="text-3xl text-white border-l-2 pl-4 border-rose-600  md:border-none md:pl-0 text-left  mt-16 font-bold uppercase" >
             Seguridad Náutica 
           </h2>
         </div>
