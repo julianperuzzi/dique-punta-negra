@@ -27,13 +27,13 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center">
           {/* Logo o Nombre */}
           <div className="mb-8 lg:mb-0">
-            <h1 className="text-2xl font-bold text-white mb-2">{texts.name}</h1>
-            <p className="text-gray-400 max-w-md">{texts.description}</p>
+            <h3 className="text-xl font-bold text-white mb-2">{texts.name}</h3>
+            <p className="text-gray-400 text-md max-w-md">{texts.description}</p>
           </div>
 
           {/* Información de contacto */}
           <div className="mb-8 lg:mb-0 lg:ml-12">
-            <h4 className="text-xl font-semibold mb-4">{texts.contactTitle}</h4>
+            <h4 className="text-lg font-semibold mb-4">{texts.contactTitle}</h4>
             <ul className="text-gray-300 space-y-2">
               <li>{texts.location}</li>
               <li>{texts.phone}</li>
@@ -43,7 +43,7 @@ const Footer = () => {
 
           {/* Redes Sociales */}
           <div className="lg:ml-12">
-            <h4 className="text-xl font-semibold mb-4">{texts.followTitle}</h4>
+            <h4 className="text-lg font-semibold mb-4">{texts.followTitle}</h4>
             <div className="flex space-x-4">
               <a
                 href="https://wa.me/5492645636968"
