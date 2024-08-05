@@ -53,12 +53,12 @@ function ParadoresScreen() {
             {displayedParadores.map((parador, index) => (
               <div
                 key={index}
-                className="flex-1 min-w-[300px] bg-gray-100 p-6 shadow-lg"
+                className="flex-1 min-w-[300px] bg-gray-100 p-4 shadow-lg"
                 data-aos="fade-up"
                 data-aos-delay={index * 100} 
               >
-                <h3 className="text-2xl font-semibold mb-4 text-pink-500">{parador.title}</h3>
-                <p className='text-neutral-600'>{parador.description}</p>
+                <h3 className="text-xl font-semibold mb-3 text-pink-500">{parador.title}</h3>
+                <p className='text-neutral-600 text-sm'>{parador.description}</p>
               </div>
             ))}
           </div>
