@@ -11,12 +11,6 @@ import AOS from 'aos'; // Importa AOS
 function Embarcaciones() {
   const sections = [
     {
-      title: 'Kayak y Embarcaciones de Alquiler',
-      description:
-        'Los kayaks y las embarcaciones que son de alquiler a prestadores no requieren control al ingresar, dado que Seguridad Náutica les hace inspecciones periódicas para asegurarse de que estén en óptimas condiciones.',
-      image: kayakImage,
-    },
-    {
       title: 'Kayak Simple Particular',
       description:
         'Para kayaks simples particulares, es necesario traer los siguientes requisitos:',
@@ -65,6 +59,12 @@ function Embarcaciones() {
       ],
       image: boatImage,
     },
+    {
+        title: 'Kayak y Embarcaciones de Alquiler',
+        description:
+          'Los kayaks y las embarcaciones de alquiler que pertencen a los prestadores, son inspeccionadas por Seguridad Náutica periódicamente para asegurarse de que estén en óptimas condiciones.',
+        image: kayakImage,
+      },
   ];
 
 
