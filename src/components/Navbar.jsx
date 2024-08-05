@@ -35,10 +35,10 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             Prestadores
           </Link>
           <Link
-            to="/PrimerosAuxilios"
+            to="/embarcaciones"
             className="text-rose-500 dark:text-gray-200 hover:text-rose-700 dark:hover:text-rose-400 transition duration-300"
           >
-            P. Auxilios
+            Embarcaciones
           </Link>
         </div>
 
@@ -73,11 +73,11 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                 Directorio
               </Link>
               <Link
-                to="/PrimerosAuxilios"
+                to="/Embarcaciones"
                 className="text-white dark:text-rose-200 hover:text-rose-100 dark:hover:text-blue-300 transition duration-300 px-4 py-2"
                 onClick={() => setIsOpen(false)}
               >
-                P. Auxilios
+                Embarcaciones
               </Link>
             </div>
           </div>
