@@ -12,7 +12,7 @@ const Footer = () => {
   const texts = {
     name: "Desarollado por Julian Peruzzi",
     description:
-      "Frontend Developer apasionado por crear experiencias web innovadoras y funcionales. Con experiencia en React y otras tecnologías modernas de desarrollo web.",
+      "Developer apasionado por crear experiencias web innovadoras y funcionales. Con experiencia en React y otras tecnologías modernas de desarrollo web.",
     contactTitle: "Contacto",
     location: "San Juan, Argentina",
     phone: "Teléfono: +54 9 2645 636968",
