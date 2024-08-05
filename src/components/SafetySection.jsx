@@ -19,15 +19,15 @@ function SafetySection() {
               />
             </div>
 
-            <div className="mx-auto md:w-3/5 p-4">
+            <div className="mx-auto md:w-3/5 p-4 ">
               
-              <p className="text-lg text-black dark:text-white/90 mb-6">
+              <p className="text-lg text-black dark:text-white/90 mb-6 border-l-2 pl-4 border-rose-600  md:border-none md:pl-0 text-left ">
                 El Dique Punta Negra cuenta con un equipo de <span className="font-semibold text-rose-500 uppercase">Seguridad Náutica</span> dedicado a resguardar la seguridad de las personas tanto dentro como fuera del agua para el disfrute de todos.
               </p>
-              <p className="text-lg text-black dark:text-white/90 mb-6">
+              <p className="text-lg text-black dark:text-white/90 mb-6 border-l-2 pl-4 border-rose-600  md:border-none md:pl-0 text-left ">
                 Este equipo está preparado para situaciones de emergencia acuática y terrestre, incluyendo primeros auxilios. Además, disponen de un <span className="font-semibold text-rose-500">DEA (Desfibrilador Externo Automático)</span> y todo un entrenamiento especializado para que el área del Dique Punta Negra sea un lugar cardioasistido.
               </p>
-              <p className="text-lg text-black dark:text-white/90 mb-6">
+              <p className="text-lg text-black dark:text-white/90 mb-6 border-l-2 pl-4 border-rose-600  md:border-none md:pl-0 text-left ">
                 También hay presencia de personal policial y de rescate en montaña siempre a disposición para garantizar tu seguridad en cualquier situación.
               </p>
               <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
