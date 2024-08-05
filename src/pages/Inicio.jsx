@@ -15,7 +15,7 @@ function Inicio() {
   }, []);
 
   return (
-    <div className="flex flex-col bg-white gap-2">
+    <div className="flex flex-col bg-white">
       {/* Pantalla de Presentación */}
       <PresentationScreen/>
 
