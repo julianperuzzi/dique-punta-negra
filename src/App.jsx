@@ -8,6 +8,7 @@ import ScrollToTop from './components/ScrollToTop';
 
 import Inicio from './pages/Inicio';
 import Prestadores from './pages/Prestadores';
+import Embarcaciones from './pages/Embarcaciones';
 // import PrimerosAuxilios from './pages/PrimerosAuxilios';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Inicio />} />
             <Route path="/Prestadores" element={<Prestadores />} />
+            <Route path='/Embarcaciones' element={<Embarcaciones />} />
             {/* <Route path="/PrimerosAuxilios" element={<PrimerosAuxilios />} /> */}
           </Routes>
         
