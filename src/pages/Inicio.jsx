@@ -34,6 +34,15 @@ function Inicio() {
 
       {/* Directorio de Contactos */}
       <SafetySection />
+
+
+      <h3 className='text-center text-2xl font-bold pt-16 pb-2 mx-2'>Para más información visita los portales oficiales de Turismo, Cultura y Deporte</h3>
+      <a
+                href="https://sanjuan.tur.ar/"
+                className="text-rose-600 hover:underline font-semibold pb-16 text-xl text-center mx-2"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Página Oficial de Turismo</a>
     </div>
   );
 }
