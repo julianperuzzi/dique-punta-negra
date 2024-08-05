@@ -81,7 +81,7 @@ function ResourcesScreen() {
             <p className="mt-4">
               Para más información sobre los paradores, visita el directorio:
             </p>
-            <Link to="/prestadores" className="text-rose-600 hover:underline font-semibold">
+            <Link to="/directorio" className="text-rose-600 hover:underline font-semibold">
               Directorio de Paradores
             </Link>
           </div>
