@@ -3,32 +3,54 @@ import React, { useState } from "react";
 function Directorio() {
   // Datos de ejemplo para los prestadores y paradores
   const prestadores = [
-    { name: "San Juan Bajo el Mar", type: "Buceo", contact: "-", phone: "0264 548-3335" },
-
-    { name: "Parador Punta Negra", type: "Kayak", contact: "-", phone: "+34 900 842 269" },
-    { name: "Parador Punta Negra", type: "Hidropedales", contact: "-", phone: "+34 900 842 269" },
-    { name: "Parador Punta Negra", type: "Confiteria", contact: "-", phone: "+34 900 842 269" },
-
-    { name: "Del Parque Aventura Punta Negra", type: "Catamaran", contact: "-", phone: "264 414 8998" },
-    { name: "Del Parque Aventura Punta Negra", type: "Confiteria", contact: "-", phone: "264 414 8998" },
-    { name: "Del Parque Aventura Punta Negra", type: "Kayak", contact: "-", phone: "264 414 8998" },
-    { name: "Del Parque Aventura Punta Negra", type: "Hidropedales", contact: "-", phone: "264 414 8998" },
-
-    { name: "La Paz", type: "Hidropedales", contact: "pedalpower@example.com", phone: "264 12345678" },
-
-    { name: "La Paz", type: "Kayak", contact: "pedalpower@example.com", phone: "264 12345678" },
-
-    { name: "La Paz", type: "Stand Up Paddle", contact: "pedalpower@example.com", phone: "264 12345678" },
-
-    { name: "San Juan SUP", type: "Stand Up Paddle", contact: "pedalpower@example.com", phone: "264 12345678" },
-
-    { name: "Pesca King", type: "Pesca Embarcado", contact: "pescador@example.com", phone: "264 12345678" },
-
-    { name: "Pesca Cano", type: "Pesca Embarcado", contact: "pescador@example.com", phone: "264 12345678" },
-
-    { name: "Pesca Bueno", type: "Pesca Embarcado", contact: "pescador@example.com", phone: "264 12345678" },
-
-
+    {
+      name: "San Juan Bajo el Mar",
+      services: ["Buceo"],
+      contact: "-",
+      phone: "0264 548-3335",
+    },
+    {
+      name: "Parador Punta Negra",
+      services: ["Kayak", "Hidropedales", "Confiteria"],
+      contact: "-",
+      phone: "+34 900 842 269",
+    },
+    {
+      name: "Del Parque Aventura Punta Negra",
+      services: ["Catamaran", "Confiteria", "Kayak", "Hidropedales"],
+      contact: "-",
+      phone: "264 414 8998",
+    },
+    {
+      name: "La Paz",
+      services: ["Hidropedales", "Kayak", "Stand Up Paddle"],
+      contact: "pedalpower@example.com",
+      phone: "264 12345678",
+    },
+    {
+      name: "San Juan SUP",
+      services: ["Stand Up Paddle"],
+      contact: "pedalpower@example.com",
+      phone: "264 12345678",
+    },
+    {
+      name: "Pesca King",
+      services: ["Pesca Embarcado"],
+      contact: "pescador@example.com",
+      phone: "264 12345678",
+    },
+    {
+      name: "Pesca Cano",
+      services: ["Pesca Embarcado"],
+      contact: "pescador@example.com",
+      phone: "264 12345678",
+    },
+    {
+      name: "Pesca Bueno",
+      services: ["Pesca Embarcado"],
+      contact: "pescador@example.com",
+      phone: "264 12345678",
+    },
   ];
 
   const [searchTerm, setSearchTerm] = useState("");
@@ -36,8 +58,11 @@ function Directorio() {
 
   // Función para filtrar los prestadores basados en el término de búsqueda y el filtro
   const filteredPrestadores = prestadores.filter((prestador) => {
-    const matchesSearch = prestador.name.toLowerCase().includes(searchTerm.toLowerCase());
-    const matchesFilter = filter === "All" || prestador.type === filter;
+    const matchesSearch = prestador.name
+      .toLowerCase()
+      .includes(searchTerm.toLowerCase());
+    const matchesFilter =
+      filter === "All" || prestador.services.includes(filter);
     return matchesSearch && matchesFilter;
   });
 
@@ -60,20 +85,23 @@ function Directorio() {
 
           {/* Filtros */}
           <div className="flex flex-row justify-center items-center gap-4">
-          <p className="text-black font-semibold dark:text-white">Buscar Actividad</p>
-          <select
-            className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
-            value={filter}
-            onChange={(e) => setFilter(e.target.value)}
-          >
-            <option value="All">Todos</option>
-            <option value="Buceo">Buceo</option>
-            <option value="Kayak">Kayak</option>
-            <option value="Catamaran">Catamarán</option>
-            <option value="Hidropedales">Hidropedales</option>
-            <option value="Confiteria">Confitería</option>
-            <option value="Pesca Embarcado">Pesca Embarcado</option>
-          </select>
+            <p className="text-black font-semibold dark:text-white">
+              Buscar Actividad
+            </p>
+            <select
+              className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
+              value={filter}
+              onChange={(e) => setFilter(e.target.value)}
+            >
+              <option value="All">Todos</option>
+              <option value="Buceo">Buceo</option>
+              <option value="Kayak">Kayak</option>
+              <option value="Catamaran">Catamarán</option>
+              <option value="Hidropedales">Hidropedales</option>
+              <option value="Confiteria">Confitería</option>
+              <option value="Stand Up Paddle">Stand Up Paddle</option>
+              <option value="Pesca Embarcado">Pesca Embarcado</option>
+            </select>
           </div>
         </div>
 
@@ -93,13 +121,27 @@ function Directorio() {
                   {prestador.name}
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  Tipo: {prestador.type}
+                  Servicios:{" "}
+                  {prestador.services.map((service, i) => (
+                    <span
+                      key={i}
+                      className="inline-block bg-blue-200 dark:bg-blue-800 text-blue-800 dark:text-blue-200 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2"
+                    >
+                      {service}
+                    </span>
+                  ))}
                 </p>
                 <p className="text-gray-600 dark:text-gray-300 mb-2">
                   Email: {prestador.contact}
                 </p>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Teléfono: <a href={`tel:${prestador.phone}`} className="text-blue-500 hover:text-blue-700">{prestador.phone}</a>
+                  Teléfono:{" "}
+                  <a
+                    href={`tel:${prestador.phone}`}
+                    className="text-blue-500 hover:text-blue-700"
+                  >
+                    {prestador.phone}
+                  </a>
                 </p>
               </div>
             ))
