@@ -47,7 +47,7 @@ function ParadoresScreen() {
     >
       <div className="bg-black bg-opacity-50 dark:bg-opacity-70 backdrop-blur-sm min-h-screen flex items-center justify-center py-10">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold mb-6 text-center text-white bg-pink-600 w-full p-2 uppercase" data-aos="fade-up">Paradores</h2>
+          <h2 className="text-4xl font-bold mb-6 text-center text-white bg-black/30 p-2 uppercase" data-aos="fade-up">Paradores</h2>
           <div className="flex flex-wrap md:grid md:grid-cols-2 md:flex-none
            gap-6 justify-center mx-4 md:mx-0 my-8">
             {displayedParadores.map((parador, index) => (
@@ -55,7 +55,7 @@ function ParadoresScreen() {
                 key={index}
                 className="flex-1 min-w-[300px] bg-gray-100 p-6 shadow-lg"
                 data-aos="fade-up"
-                data-aos-delay={index * 100} // Retrasa la animación de cada parador
+                data-aos-delay={index * 100} 
               >
                 <h3 className="text-2xl font-semibold mb-4 text-pink-500">{parador.title}</h3>
                 <p className='text-neutral-600'>{parador.description}</p>
