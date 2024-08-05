@@ -9,7 +9,7 @@ import ScrollToTop from './components/ScrollToTop';
 import Inicio from './pages/Inicio';
 import Prestadores from './pages/Prestadores';
 import Embarcaciones from './pages/Embarcaciones';
-// import PrimerosAuxilios from './pages/PrimerosAuxilios';
+import Directorio from './pages/Directorio';
 
 function App() {
   const [darkMode, setDarkMode] = React.useState(false);
@@ -28,7 +28,7 @@ function App() {
             <Route path="/" element={<Inicio />} />
             <Route path="/Prestadores" element={<Prestadores />} />
             <Route path='/Embarcaciones' element={<Embarcaciones />} />
-            {/* <Route path="/PrimerosAuxilios" element={<PrimerosAuxilios />} /> */}
+            <Route path='/directorio' element={<Directorio />} />
           </Routes>
         
         <Footer />
