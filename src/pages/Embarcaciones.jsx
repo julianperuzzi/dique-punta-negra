@@ -117,7 +117,7 @@ function Embarcaciones() {
             className="bg-white dark:bg-gray-800 shadow-xl mb-10 overflow-hidden mx-1 md:mx-0"
           >
             <div className="md:flex" data-aos="fade-right" >
-              <div className="md:w-1/2 h-80" >
+              <div className="md:w-1/2 md:h-80" >
                 <img
                   src={section.image}
                   alt={section.title}
