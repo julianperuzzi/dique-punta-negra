@@ -69,16 +69,16 @@ function ActivitiesScreen() {
             {displayedActivities.map((activity, index) => (
               <div
                 key={index}
-                className="flex-1 min-w-[300px] bg-white p-6 shadow-lg flex flex-col justify-between backdrop-blur-md"
+                className="flex-1 min-w-[300px] bg-white p-4 shadow-lg flex flex-col justify-between backdrop-blur-md"
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
               >
                 <div>
-                  <h3 className="text-2xl font-semibold mb-4 text-pink-500">{activity.title}</h3>
-                  <p className='text-gray-700 mb-4'>{activity.description}</p>
+                  <h3 className="text-xl font-semibold mb-3 text-pink-500">{activity.title}</h3>
+                  <p className='text-gray-700 mb-3 text-sm'>{activity.description}</p>
                 </div>
                 <div>
-                  <Link to="/directorio" className="text-rose-500 font-semibold hover:underline">Ir a Directorio de Prestadores</Link>
+                  <Link to="/directorio" className="text-rose-500 font-semibold text-sm hover:underline">Ir a Directorio de Prestadores</Link>
                 </div>
               </div>
             ))}
