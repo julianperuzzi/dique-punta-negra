@@ -87,7 +87,7 @@ function Embarcaciones() {
           <h2 className="text-5xl md:text-6xl font-bold text-white mb-2 text-center md:border-b-2 border-white pb-10 md:w-8/12 mx-4">
             Embarcaciones en el Dique Punta Negra
           </h2>
-          <h2 className="text-2xl text-white md:text-center border-l-4 border-pink-600 pl-4 md:border-none md:pl-0 md:mt-6 text-left mx-4 md:mx-0" >
+          <h2 className="text-2xl text-white md:text-center mx-4 md:mx-0 text-center " >
             Conoce los requisitos para disfrutar de la navegación
           </h2>
           <h2 className="text-3xl text-white text-center mt-16 font-bold uppercase" >
