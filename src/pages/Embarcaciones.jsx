@@ -95,7 +95,7 @@ function Embarcaciones() {
           <h2 className="text-5xl md:text-orange-400 text-white   md:border-none md:pl-0 text-center  mt-16 font-bold uppercase" >
             Seguridad Náutica 
           </h2>
-          <p className="  text-gray-200  mt-20 font-thin ">⇓ Dezliza para más información ⇓</p>
+          <p className="  text-gray-200  mt-20 font-thin ">⇓ Desliza para más información ⇓</p>
         </div>
       </Parallax>
 
