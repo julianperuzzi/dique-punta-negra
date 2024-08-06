@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Parallax } from 'react-parallax';
-import imgParadores from '../assets/imgDown/41144002791_79fae4d7c0_o.jpg'; // Ajusta la ruta según la ubicación de tu imagen
+import imgParadores from '../assets/imgDown/fotocatamaranmuelle.jpg'; // Ajusta la ruta según la ubicación de tu imagen
 import 'aos/dist/aos.css'; // Importa los estilos de AOS
 import AOS from 'aos'; // Importa AOS
 
@@ -24,20 +24,14 @@ const paradores = [
 ];
 
 function ParadoresScreen() {
-  const [showAll, setShowAll] = useState(false);
-
-  const handleShowMore = () => {
-    setShowAll(true);
-  };
-
-  // Muestra solo los primeros 2 elementos en la vista móvil, o todos si showAll es true
-  const displayedParadores = showAll ? paradores : paradores.slice(0, 2);
 
   // Inicializa AOS
   React.useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({
+      duration: 1000,
+      once: true, // Hace que la animación ocurra solo una vez
+    });
   }, []);
-
   return (
     <Parallax
       bgImage={imgParadores}
@@ -47,10 +41,11 @@ function ParadoresScreen() {
     >
       <div className="bg-black bg-opacity-50 dark:bg-opacity-70 backdrop-blur-sm min-h-screen flex items-center justify-center py-10">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold mb-6 text-center text-white bg-black/30 p-2 uppercase" data-aos="fade-up">Paradores</h2>
-          <div className="flex flex-wrap md:grid md:grid-cols-2 md:flex-none
-           gap-6 justify-center mx-4 md:mx-0 my-8">
-            {displayedParadores.map((parador, index) => (
+          <h2 className="text-4xl font-bold mb-6 text-center text-white bg-black/30 p-2 uppercase" data-aos="fade-up">
+            Paradores
+          </h2>
+          <div className="flex flex-wrap md:grid md:grid-cols-2 md:flex-none gap-6 justify-center mx-4 md:mx-0 my-8">
+            {paradores.map((parador, index) => (
               <div
                 key={index}
                 className="flex-1 min-w-[300px] bg-gray-100 p-4 shadow-lg"
@@ -62,16 +57,6 @@ function ParadoresScreen() {
               </div>
             ))}
           </div>
-          {!showAll && paradores.length > 2 && (
-            <div className="text-center mt-4">
-              <button 
-                onClick={handleShowMore} 
-                className="bg-orange-600 text-white py-2 px-4 hover:bg-orange-500 my-8"
-              >
-                Mostrar más
-              </button>
-            </div>
-          )}
         </div>
       </div>
     </Parallax>

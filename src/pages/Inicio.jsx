@@ -15,7 +15,7 @@ function Inicio() {
   }, []);
 
   return (
-    <div className="flex flex-col bg-white">
+    <div className="flex flex-col bg-neutral-50">
       {/* Pantalla de Presentación */}
       <PresentationScreen/>
 

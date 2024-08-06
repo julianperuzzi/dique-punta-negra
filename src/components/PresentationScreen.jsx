@@ -1,5 +1,5 @@
 import { Parallax } from 'react-parallax';
-import imgPuntaNegra from '../assets/imgDown/51804382835_2a0e82870b_o.jpg';
+import imgPuntaNegra from '../assets/imgDown//fotodiqueaerea.jpg';
 
 
 function PresentationScreen() {

@@ -4,8 +4,11 @@ import 'aos/dist/aos.css'; // Importa los estilos de AOS
 import AOS from 'aos'; // Importa AOS
 
 function ResourcesScreen() {
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
+  React.useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true, // Hace que la animación ocurra solo una vez
+    });
   }, []);
 
   return (

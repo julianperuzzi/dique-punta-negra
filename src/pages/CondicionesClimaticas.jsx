@@ -31,7 +31,7 @@ function CondicionesClimaticas() {
   }, []);
 
   return (
-    <div className="bg-gray-100 dark:bg-gray-900 py-24 px-2 min-h-screen">
+    <div className="bg-neutral-50 dark:bg-gray-900 py-24 px-2 min-h-screen">
       <div className="container mx-auto">
         <h1 className="text-4xl font-bold mb-8 text-center text-gray-900 dark:text-white px-2">
           Condiciones Climáticas de Punta Negra
@@ -41,17 +41,9 @@ function CondicionesClimaticas() {
           {/* Widget del Clima */}
           <div className="bg-white dark:bg-gray-800 shadow-md  p-6">
             <h2 className="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">
-              Clima Actual
+              Clima Actual - Zonda, San Juan
             </h2>
-            <a
-              className="weatherwidget-io"
-              href="https://forecast7.com/es/n31d56n68d73/zonda/"
-              data-label_1="ZONDA"
-              data-label_2="CLIMA"
-              data-theme="original"
-            >
-              ZONDA CLIMA
-            </a>
+            <a  class="weatherwidget-io" href="https://forecast7.com/es/n31d56n68d73/zonda/" data-label_1="ZONDA, SJ , ARG" data-label_2="CLIMA" data-icons="Climacons Animated" data-days="3" data-theme="original" >ZONDA CLIMA</a>
           </div>
 
           {/* Widget del Viento */}
@@ -68,8 +60,8 @@ function CondicionesClimaticas() {
             ></div>
           </div>
 
-          {/* Widget del Mapa de Viento
-          <div className="bg-white dark:bg-gray-800 shadow-md  p-6">
+          {/* * Widget del Mapa de Viento */}
+          <div className="hidden  bg-white dark:bg-gray-800 shadow-md p-6 h-auto">
             <h2 className="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">
               Mapa de Viento
             </h2>
@@ -78,9 +70,9 @@ function CondicionesClimaticas() {
               data-spotid="451747"
               data-appid="fb6536a18e3ed0e13e61b44e807fff4c"
               data-spots="true"
-              className="w-full h-96"
+              className="w-full h-auto"
             ></div>
-          </div> */}
+          </div> 
 
           {/* Mapa de Punta Negra */}
           <div className="bg-white dark:bg-gray-800 shadow-md  p-6">

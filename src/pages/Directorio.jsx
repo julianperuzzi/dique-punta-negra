@@ -67,7 +67,7 @@ function Directorio() {
   });
 
   return (
-    <div className="bg-gray-100 dark:bg-gray-900 py-24 px-6 min-h-screen">
+    <div className="bg-neutral-50 dark:bg-gray-900 py-24 px-6 min-h-screen">
       <div className="container mx-auto">
         <h1 className="text-4xl font-bold mb-8 text-center text-gray-900 dark:text-white">
           Directorio de Prestadores y Paradores
@@ -125,7 +125,7 @@ function Directorio() {
                   {prestador.services.map((service, i) => (
                     <span
                       key={i}
-                      className="inline-block bg-orange-200 dark:bg-orange-800 text-orange-900 dark:text-orange-200 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2"
+                      className="inline-block bg-orange-200 dark:bg-orange-800 text-orange-700 dark:text-orange-200 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2"
                     >
                       {service}
                     </span>

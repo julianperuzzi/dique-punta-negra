@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
-import kayakImage from '../assets/imgDown/49455928437_fbfbacfcdd_o.jpg';
-import boatImage from '../assets/imgDown/40432437944_2b02a622e5_o.jpg';
-import safetyImage from '../assets/imgDown/26272110537_a0a223b2c7_o.jpg';
+import kayakImage from '../assets/imgDown/fotokayaks.jpg';
+import boatImage from '../assets/imgDown/fotocatamarandentro.jpg';
+import safetyImage from '../assets/imgDown/fotocatamarandentro.jpg';
 
 import { Parallax } from 'react-parallax';
 import 'aos/dist/aos.css'; // Importa los estilos de AOS
@@ -70,13 +70,15 @@ function Embarcaciones() {
 
 
   React.useEffect(() => {
-    AOS.init({ duration: 1000 });
-    
+    AOS.init({
+      duration: 1000,
+      once: true, // Hace que la animación ocurra solo una vez
+    });
   }, []);
 
 
   return (
-    <section className='bg-white dark:bg-slate-900'>
+    <section className='bg-neutral-50 dark:bg-dark'>
       {/* Sección de Parallax */}
       <Parallax
         bgImage={safetyImage}
@@ -90,13 +92,14 @@ function Embarcaciones() {
           <h2 className="text-2xl text-white mx-4 md:mx-0  mt-10 border-l-2 pl-4 border-orange-600  md:border-none md:pl-0 text-left " >
             Conoce los requisitos para disfrutar de la navegación
           </h2>
-          <h2 className="text-3xl text-white border-l-2 pl-4 border-orange-600  md:border-none md:pl-0 text-left  mt-16 font-bold uppercase" >
+          <h2 className="text-5xl md:text-orange-400 text-white   md:border-none md:pl-0 text-center  mt-16 font-bold uppercase" >
             Seguridad Náutica 
           </h2>
+          <p className="  text-gray-200  mt-20 font-thin ">⇓ Dezliza para más información ⇓</p>
         </div>
       </Parallax>
 
-      <div className="container mx-auto" data-aos="fade-up">
+      <div className="container mx-auto" >
         <h2 className="text-4xl font-bold my-10 text-center text-gray-900 dark:text-white mx-2">
           Requisitos para Ingreso de Embarcaciones al Dique Punta Negra
         </h2>
@@ -114,9 +117,9 @@ function Embarcaciones() {
         {sections.map((section, index) => (
           <div
             key={index}
-            className="bg-white dark:bg-gray-800 shadow-xl mb-10 overflow-hidden mx-1 md:mx-0"
+            className=" dark:bg-slate-900 bg-white shadow-xl mb-10 overflow-hidden mx-2 md:mx-0 border-l-4 border-b-4 border-orange-500"  data-aos="fade-right"
           >
-            <div className="md:flex" data-aos="fade-right" >
+            <div className="md:flex" >
               <div className="md:w-1/2 md:h-80" >
                 <img
                   src={section.image}
@@ -146,7 +149,7 @@ function Embarcaciones() {
         {/* Información de contacto */}
         <div className="text-center py-10 mx-4">
           <p className="text-2xl text-gray-700 dark:text-gray-300 font-bold">
-            Para comunicarte con Seguridad Náutica, puedes llamar o enviar un
+            Para comunicarte con <span className='text-orange-600'>Seguridad Náutica </span> , puedes llamar o enviar un
             WhatsApp al número: <a href="tel:2646703953" className="text-orange-500 hover:text-orange-700">2646703953</a>
           </p>
         </div>
