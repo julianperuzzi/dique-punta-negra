@@ -78,7 +78,7 @@ function Directorio() {
           <input
             type="text"
             placeholder="Buscar por nombre..."
-            className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:border-gray-700 dark:bg-gray-800 dark:text-white mb-4 md:mb-0 md:mr-4"
+            className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 dark:border-gray-700 dark:bg-gray-800 dark:text-white mb-4 md:mb-0 md:mr-4"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
@@ -89,7 +89,7 @@ function Directorio() {
               Buscar Actividad
             </p>
             <select
-              className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
+              className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
               value={filter}
               onChange={(e) => setFilter(e.target.value)}
             >
@@ -115,9 +115,9 @@ function Directorio() {
             filteredPrestadores.map((prestador, index) => (
               <div
                 key={index}
-                className="bg-white dark:bg-gray-800 shadow-md rounded-lg p-6 flex flex-col justify-between"
+                className="bg-white dark:bg-gray-800 shadow-md p-6 flex flex-col justify-between hover:scale-105 transition duration-200"
               >
-                <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-white">
+                <h3 className="text-2xl font-semibold mb-2 text-orange-700 dark:text-white">
                   {prestador.name}
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
@@ -125,7 +125,7 @@ function Directorio() {
                   {prestador.services.map((service, i) => (
                     <span
                       key={i}
-                      className="inline-block bg-blue-200 dark:bg-blue-800 text-blue-800 dark:text-blue-200 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2"
+                      className="inline-block bg-orange-200 dark:bg-orange-800 text-orange-900 dark:text-orange-200 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2"
                     >
                       {service}
                     </span>
@@ -138,7 +138,7 @@ function Directorio() {
                   Teléfono:{" "}
                   <a
                     href={`tel:${prestador.phone}`}
-                    className="text-blue-500 hover:text-blue-700"
+                    className="text-orange-500 hover:text-orange-700"
                   >
                     {prestador.phone}
                   </a>

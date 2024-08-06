@@ -74,11 +74,11 @@ function ActivitiesScreen() {
                 data-aos-delay={index * 100}
               >
                 <div>
-                  <h3 className="text-xl font-semibold mb-3 text-pink-500">{activity.title}</h3>
+                  <h3 className="text-xl font-semibold mb-3 text-orange-500">{activity.title}</h3>
                   <p className='text-gray-700 mb-3 text-sm'>{activity.description}</p>
                 </div>
                 <div>
-                  <Link to="/directorio" className="text-rose-500 font-semibold text-sm hover:underline">Ir a Directorio de Prestadores</Link>
+                  <Link to="/directorio" className="text-orange-500 font-semibold text-sm hover:underline">Ir a Directorio de Prestadores</Link>
                 </div>
               </div>
             ))}
@@ -87,7 +87,7 @@ function ActivitiesScreen() {
             <div className="text-center mt-4">
               <button 
                 onClick={handleShowMore} 
-                className="bg-pink-700 text-white py-2 px-4 hover:bg-pink-500 my-8"
+                className="bg-orange-600 text-white py-2 px-4 hover:bg-orange-500 my-8"
               >
                 Mostrar más
               </button>

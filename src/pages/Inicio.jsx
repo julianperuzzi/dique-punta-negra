@@ -36,10 +36,10 @@ function Inicio() {
       <SafetySection />
 
 
-      <h3 className='text-center text-2xl font-bold md:pt-16 pb-2 mx-2 border-t-2 border-rose-600/30 pt-10'>Para más información visita los portales oficiales de Turismo, Cultura y Deporte</h3>
+      <h3 className='text-center text-2xl font-bold md:pt-16 pb-2 mx-2 border-t-2 border-orange-600/30 pt-10'>Para más información visita los portales oficiales de Turismo, Cultura y Deporte</h3>
       <a
                 href="https://sanjuan.tur.ar/"
-                className="text-rose-600 hover:underline font-semibold pb-20 text-xl text-center mx-2"
+                className="text-orange-600 hover:underline font-semibold pb-20 text-xl text-center mx-2"
                 target="_blank"
                 rel="noopener noreferrer"
               >Página Oficial de Turismo</a>

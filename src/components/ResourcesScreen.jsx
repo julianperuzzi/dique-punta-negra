@@ -11,7 +11,7 @@ function ResourcesScreen() {
   return (
     <div className="bg-white py-12 px-6 text-black dark:bg-slate-800 dark:text-white min-h-screen content-center">
       <div className=" container  mx-auto " data-aos="fade-up">
-        <h2 className="text-4xl font-bold mb-10 text-center text-rose-600 w-full p-2 uppercase dark:text-white">Conoce Más</h2>
+        <h2 className="text-4xl font-bold mb-10 text-center text-orange-500 w-full p-2 uppercase dark:text-white">Conoce Más</h2>
 
         {/* Contenedor del mapa y la información */}
         <div className="flex flex-col lg:flex-row gap-8">
@@ -19,7 +19,7 @@ function ResourcesScreen() {
           <div className="md:w-2/3 text-left">
           
             {/* Nueva sección: Cómo llegar al dique */}
-            <h3 className=" text-xl font-semibold mb-4 bg-rose-600 px-3 py-1 text-white ">
+            <h3 className=" text-xl font-semibold mb-4 bg-orange-500 px-3 py-1 text-white ">
               Cómo Llegar al Dique Punta Negra
             </h3>
             <p className="mb-4">
@@ -32,7 +32,7 @@ function ResourcesScreen() {
               recomendamos visitar la{' '}
               <a
                 href="https://sanjuan.tur.ar/"
-                className="text-rose-600 hover:underline font-semibold"
+                className="text-orange-600 hover:underline font-semibold"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -42,7 +42,7 @@ function ResourcesScreen() {
             </p>
 
             {/* Nueva sección: Información sobre embarcaciones */}
-            <h3 className=" text-xl font-semibold mt-8 mb-4 bg-rose-600 px-3 py-1 text-white">
+            <h3 className=" text-xl font-semibold mt-8 mb-4 bg-orange-500 px-3 py-1 text-white">
               Información sobre Embarcaciones
             </h3>
             <p className="mb-4">
@@ -52,14 +52,14 @@ function ResourcesScreen() {
             </p>
             <Link
               to="/embarcaciones"
-              className="text-rose-600 hover:underline font-semibold"
+              className="text-orange-600 hover:underline font-semibold"
             >
               Requisitos Embarcaciones en Punta Negra
             </Link>
             
 
 
-            <h3 className=" text-xl font-semibold mt-8 bg-rose-600 px-3 py-1 text-white">
+            <h3 className=" text-xl font-semibold mt-8 bg-orange-500 px-3 py-1 text-white">
               Área de Primeros Auxilios
             </h3>
             <p className="my-4">
@@ -71,7 +71,7 @@ function ResourcesScreen() {
             </p>
             <a
               href="https://www.grcp-arg.website"
-              className="text-rose-600 hover:underline font-semibold"
+              className="text-orange-600 hover:underline font-semibold"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -81,13 +81,13 @@ function ResourcesScreen() {
             <p className="mt-4">
               Para más información sobre los paradores, visita el directorio:
             </p>
-            <Link to="/directorio" className="text-rose-600 hover:underline font-semibold">
+            <Link to="/directorio" className="text-orange-600 hover:underline font-semibold">
               Directorio de Paradores
             </Link>
           </div>
 
           {/* Mapa de Google */}
-          <div className="md:w-1/3 flex justify-center mb-8 md:mb-0">
+          <div className="md:w-1/3 flex justify-center mb-8 md:mb-0 border-l-4 border-orange-500">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8906.267574453095!2d-68.83570083227434!3d-31.525902604021393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96814c6d428e14e5%3A0x6625f10804493022!2sEmbarcadero%20Punta%20Negra!5e0!3m2!1ses!2sar!4v1722642197572!5m2!1ses!2sar"
               width="600"

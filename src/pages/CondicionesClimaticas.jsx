@@ -39,7 +39,7 @@ function CondicionesClimaticas() {
 
         <div className="grid grid-cols-1 gap-8">
           {/* Widget del Clima */}
-          <div className="bg-white dark:bg-gray-800 shadow-md rounded-lg p-6">
+          <div className="bg-white dark:bg-gray-800 shadow-md  p-6">
             <h2 className="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">
               Clima Actual
             </h2>
@@ -55,7 +55,7 @@ function CondicionesClimaticas() {
           </div>
 
           {/* Widget del Viento */}
-          <div className="bg-white dark:bg-gray-800 shadow-md rounded-lg p-6">
+          <div className="bg-white dark:bg-gray-800 shadow-md  p-6">
             <h2 className="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">
               Condiciones del Viento
             </h2>
@@ -69,7 +69,7 @@ function CondicionesClimaticas() {
           </div>
 
           {/* Widget del Mapa de Viento
-          <div className="bg-white dark:bg-gray-800 shadow-md rounded-lg p-6">
+          <div className="bg-white dark:bg-gray-800 shadow-md  p-6">
             <h2 className="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">
               Mapa de Viento
             </h2>
@@ -83,7 +83,7 @@ function CondicionesClimaticas() {
           </div> */}
 
           {/* Mapa de Punta Negra */}
-          <div className="bg-white dark:bg-gray-800 shadow-md rounded-lg p-6">
+          <div className="bg-white dark:bg-gray-800 shadow-md  p-6">
             <h2 className="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">
               Mapa de Punta Negra
             </h2>

@@ -57,7 +57,7 @@ function ParadoresScreen() {
                 data-aos="fade-up"
                 data-aos-delay={index * 100} 
               >
-                <h3 className="text-xl font-semibold mb-3 text-pink-500">{parador.title}</h3>
+                <h3 className="text-xl font-semibold mb-3 text-orange-500">{parador.title}</h3>
                 <p className='text-neutral-600 text-sm'>{parador.description}</p>
               </div>
             ))}
@@ -66,7 +66,7 @@ function ParadoresScreen() {
             <div className="text-center mt-4">
               <button 
                 onClick={handleShowMore} 
-                className="bg-pink-700 text-white py-2 px-4 hover:bg-pink-500 my-8"
+                className="bg-orange-600 text-white py-2 px-4 hover:bg-orange-500 my-8"
               >
                 Mostrar más
               </button>

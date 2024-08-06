@@ -87,10 +87,10 @@ function Embarcaciones() {
           <h2 className="text-5xl md:text-6xl font-bold text-white mb-2 md:text-center text-left border-b-2 border-white pb-10 md:w-8/12 mx-4">
             Embarcaciones en el Dique Punta Negra
           </h2>
-          <h2 className="text-2xl text-white mx-4 md:mx-0  mt-10 border-l-2 pl-4 border-rose-600  md:border-none md:pl-0 text-left " >
+          <h2 className="text-2xl text-white mx-4 md:mx-0  mt-10 border-l-2 pl-4 border-orange-600  md:border-none md:pl-0 text-left " >
             Conoce los requisitos para disfrutar de la navegación
           </h2>
-          <h2 className="text-3xl text-white border-l-2 pl-4 border-rose-600  md:border-none md:pl-0 text-left  mt-16 font-bold uppercase" >
+          <h2 className="text-3xl text-white border-l-2 pl-4 border-orange-600  md:border-none md:pl-0 text-left  mt-16 font-bold uppercase" >
             Seguridad Náutica 
           </h2>
         </div>
@@ -147,7 +147,7 @@ function Embarcaciones() {
         <div className="text-center py-10 mx-4">
           <p className="text-2xl text-gray-700 dark:text-gray-300 font-bold">
             Para comunicarte con Seguridad Náutica, puedes llamar o enviar un
-            WhatsApp al número: <a href="tel:2646703953" className="text-rose-500 hover:text-rose-700">2646703953</a>
+            WhatsApp al número: <a href="tel:2646703953" className="text-orange-500 hover:text-orange-700">2646703953</a>
           </p>
         </div>
       </div>
