@@ -6,7 +6,7 @@ import imgNautica from '../assets/imgSeguridadNautica/imgComunicacion.jpeg';
 function SafetySection() {
   return (
     <section className="">
-        <div className="bg-white/95 dark:bg-slate-800  dark:bg-opacity-95 backdrop-blur-sm min-h-screen flex items-center justify-center flex-col py-24">
+        <div className="bg-white dark:bg-slate-800  dark:bg-opacity-95 backdrop-blur-sm min-h-screen flex items-center justify-center flex-col py-20">
         <h2 className="text-4xl font-bold md:mb-6 text-center text-orange-500 dark:text-white w-full py-6 uppercase">Seguridad en el Dique</h2>
 
           <div className="flex flex-col md:flex-row-reverse items-center md:mx-8 gap-6 justify-center text-center md:text-left">

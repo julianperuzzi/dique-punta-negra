@@ -1,5 +1,4 @@
 // src/App.jsx
-
 import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
@@ -22,7 +21,7 @@ function App() {
 
   return (
     <Router>
-      <div className={darkMode ? 'dark' : ''}>
+      <div className={ darkMode ? 'dark' : ''}>
         <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <ScrollToTop />
         

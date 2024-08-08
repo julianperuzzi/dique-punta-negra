@@ -92,7 +92,7 @@ function Embarcaciones() {
           <h2 className="text-2xl text-white mx-4 md:mx-0  mt-10 border-l-2 pl-4 border-orange-600  md:border-none md:pl-0 text-left " >
             Conoce los requisitos para disfrutar de la navegación
           </h2>
-          <h2 className="text-5xl md:text-orange-400 text-white   md:border-none md:pl-0 text-center  mt-16 font-bold uppercase" >
+          <h2 className="text-5xl  text-white   md:border-none md:pl-0 text-center  mt-16 font-bold uppercase" >
             Seguridad Náutica 
           </h2>
           <p className="  text-gray-200  mt-20 font-thin ">⇓ Desliza para más información ⇓</p>

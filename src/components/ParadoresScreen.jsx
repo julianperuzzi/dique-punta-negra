@@ -48,7 +48,7 @@ function ParadoresScreen() {
             {paradores.map((parador, index) => (
               <div
                 key={index}
-                className="flex-1 min-w-[300px] bg-gray-100 p-4 shadow-lg"
+                className="flex-1 min-w-[300px] bg-gray-100 p-4 shadow-lg rounded-tl-xl"
                 data-aos="fade-up"
                 data-aos-delay={index * 100} 
               >
