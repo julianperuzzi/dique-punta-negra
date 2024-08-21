@@ -31,7 +31,7 @@ function CondicionesClimaticas() {
   }, []);
 
   return (
-    <div className="bg-neutral-50 dark:bg-gray-900 py-24 px-2 min-h-screen" >
+    <div className="bg-neutral-200/80  py-24 px-2 min-h-screen" >
       <div className="container mx-auto">
         <h1 className="text-4xl font-bold mb-8 text-center text-gray-900 dark:text-white px-2">
           Condiciones Climáticas de Punta Negra

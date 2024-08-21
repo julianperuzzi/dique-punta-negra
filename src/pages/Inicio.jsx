@@ -15,28 +15,31 @@ function Inicio() {
   }, []);
 
   return (
-    <div className="flex flex-col bg-neutral-50 ">
+    <div className="flex flex-col bg-gradient-to-br from-gray-300 via-gray-100/50 to-gray-200 dark:bg-gradient-to-tr dark:from-gray-800 dark:via-gray-700 dark:to-gray-900 ">
       {/* Pantalla de Presentación */}
       <PresentationScreen/>
 
       {/* Información de Actividades */}
       <ActivitiesScreen />
+      <span className='border-t border-gray-400/60 mx-8'></span>
 
-      
       {/* Recursos */}
       <ResourcesScreen />
+      <span className='border-t border-gray-400/60 mx-8'></span>
 
 
       {/* Información de Paradores */}
       <ParadoresScreen />
+      <span className='border-t border-gray-400/60 mx-8'></span>
 
       
 
       {/* Directorio de Contactos */}
       <SafetySection />
+      <span className='border-t border-gray-400/60 mx-8'></span>
 
 
-      <h3 className='text-center text-2xl font-bold md:pt-16 pb-2 mx-2 border-t-2 border-orange-600/30 pt-10'>Para más información visita los portales oficiales de Turismo, Cultura y Deporte</h3>
+      <h3 className='text-center text-2xl font-bold md:pt-16 pb-2 mx-2  pt-10 dark:text-white'>Para más información visita los portales oficiales de Turismo, Cultura y Deporte</h3>
       <a
                 href="https://sanjuan.tur.ar/"
                 className="text-orange-600 hover:underline font-semibold pb-20 text-xl text-center mx-2"

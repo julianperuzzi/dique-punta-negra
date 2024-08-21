@@ -12,6 +12,10 @@ export default {
   // Personalización del tema
   theme: {
     extend: {
+      fontFamily: {
+        display: ['Source Serif Pro', 'serif'],
+        body: ['Synonym', 'sans-serif'],
+      },
       // Aquí puedes extender el tema con colores personalizados, fuentes, etc.
       colors: {
         primary: '#FF69B4', // Por ejemplo, un color primario rosa

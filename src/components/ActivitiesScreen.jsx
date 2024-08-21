@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import { Parallax } from 'react-parallax';
-import backgroundImage from '../assets/imgDown/fotobuceo.jpg'; // Ajusta la ruta según la ubicación de tu imagen
 import { Link } from 'react-router-dom';
 import 'aos/dist/aos.css'; // Importa los estilos de AOS
 import AOS from 'aos'; // Importa AOS
@@ -30,7 +28,6 @@ const activities = [
     title: 'Standup Paddle',
     description: 'Navega por el dique mientras te mantienes de pie sobre una tabla.',
   },
-  
   {
     title: 'Hidropedales',
     description: 'Diviértete con un paseo en hidropedales sobre el agua.',
@@ -45,7 +42,7 @@ const activities = [
   },
   {
     title: 'Ferias y Música',
-    description: 'Entre montañas, feriantes y musica llenan este hermoso',
+    description: 'Entre montañas, feriantes y música llenan este hermoso lugar.',
   },
   {
     title: 'Gastronomía',
@@ -72,49 +69,47 @@ function ActivitiesScreen() {
   }, []);
 
   return (
-    <Parallax
-      bgImage={backgroundImage}
-      strength={200}
-      bgImageStyle={{ objectFit: "cover", width: "100%" }}
-    >
-      <div className="bg-black bg-opacity-10 dark:bg-opacity-30  min-h-screen flex items-center ">
-        <div className="container mx-auto">
-          <h2 className="text-4xl font-bold my-6 text-center text-white bg-black/30 p-2 uppercase">Actividades</h2>
-          <div className="flex flex-wrap md:grid md:grid-cols-4 md:flex-none gap-6 mx-4 md:mx-0 my-8 ">
-            {displayedActivities.map((activity, index) => (
-              <div
-                key={index}
-                className="flex-1 min-w-[300px] bg-white p-4 shadow-lg flex flex-col justify-between backdrop-blur-md rounded-tl-xl"
-                data-aos="fade-up"
-                data-aos-delay={index * 50}
-              >
-                <div>
-                  <h3 className="text-xl font-semibold mb-3 text-orange-500">{activity.title}</h3>
-                  <p className='text-gray-700 mb-3 text-sm'>{activity.description}</p>
-                </div>
-                <div>
-                  <Link to="/directorio" className="text-orange-500 font-semibold text-sm hover:underline">Ir a Directorio de Prestadores</Link>
-                </div>
+    <div className="min-h-screen flex items-center relative ">
+
+      
+      <div className="container mx-auto relative z-10">
+      <h2 className="text-5xl font-bold my-10 text-center text-gray-900 dark:text-white" data-aos="fade-up">
+          Actividades
+        </h2>
+        
+        <div className="flex flex-wrap md:grid md:grid-cols-4 md:flex-none gap-6 mx-4 md:mx-0 my-8">
+          {displayedActivities.map((activity, index) => (
+            <div
+              key={index}
+              className="flex-1 min-w-[300px] bg-white p-4 shadow-lg flex flex-col justify-between backdrop-blur-md rounded-tl-xl"
+              data-aos="fade-up"
+              data-aos-delay={index * 50}
+            >
+              <div>
+                <h3 className="text-xl font-semibold mb-3 text-orange-500">{activity.title}</h3>
+                <p className="text-gray-700 mb-3 text-sm">{activity.description}</p>
               </div>
-              
-            ))}
-            
-            
-          </div>
-          {!showAll && (
-            <div className="text-center mt-4">
-              <button 
-                onClick={handleShowMore} 
-                className="bg-orange-600 text-white py-2 px-4 hover:bg-orange-500 my-8"
-              >
-                Mostrar más
-              </button>
+              <div>
+                <Link to="/directorio" className="text-orange-500 font-semibold text-sm hover:underline">
+                  Ir a Directorio de Prestadores
+                </Link>
+              </div>
             </div>
-          )}
+          ))}
         </div>
         
+        {!showAll && (
+          <div className="text-center mt-4">
+            <button 
+              onClick={handleShowMore} 
+              className="bg-orange-600 text-white py-2 px-4 hover:bg-orange-500 my-8"
+            >
+              Mostrar más
+            </button>
+          </div>
+        )}
       </div>
-    </Parallax>
+    </div>
   );
 }
 

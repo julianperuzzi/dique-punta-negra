@@ -1,6 +1,4 @@
 import React from 'react';
-import { Parallax } from 'react-parallax';
-import imgParadores from '../assets/imgDown/fotocatamaranmuelle.jpg'; // Ajusta la ruta según la ubicación de tu imagen
 import 'aos/dist/aos.css'; // Importa los estilos de AOS
 import AOS from 'aos'; // Importa AOS
 
@@ -24,7 +22,6 @@ const paradores = [
 ];
 
 function ParadoresScreen() {
-
   // Inicializa AOS
   React.useEffect(() => {
     AOS.init({
@@ -32,34 +29,34 @@ function ParadoresScreen() {
       once: true, // Hace que la animación ocurra solo una vez
     });
   }, []);
+
   return (
-    <Parallax
-      bgImage={imgParadores}
-      bgImageAlt="Paradores"
-      strength={300}
-      bgImageStyle={{ objectFit: "cover", width: "100%" }}
-    >
-      <div className="bg-black bg-opacity-50 dark:bg-opacity-70 backdrop-blur-sm min-h-screen flex items-center justify-center py-10">
-        <div className="container mx-auto">
-          <h2 className="text-4xl font-bold mb-6 text-center text-white bg-black/30 p-2 uppercase" data-aos="fade-up">
-            Paradores
-          </h2>
-          <div className="flex flex-wrap md:grid md:grid-cols-2 md:flex-none gap-6 justify-center mx-4 md:mx-0 my-8">
-            {paradores.map((parador, index) => (
-              <div
-                key={index}
-                className="flex-1 min-w-[300px] bg-gray-100 p-4 shadow-lg rounded-tl-xl"
-                data-aos="fade-up"
-                data-aos-delay={index * 100} 
-              >
-                <h3 className="text-xl font-semibold mb-3 text-orange-500">{parador.title}</h3>
-                <p className='text-neutral-600 text-sm'>{parador.description}</p>
-              </div>
-            ))}
-          </div>
+    <div className="relative min-h-screen flex items-center justify-center py-10  ">
+      {/* Fondo */}
+      <div className="absolute inset-0  dark:from-gray-800 dark:via-gray-900 dark:to-black">
+      </div>
+
+      <div className="container mx-auto relative z-10">
+        <h2 className="text-5xl font-bold mb-6 text-center text-gray-900 dark:text-white" data-aos="fade-up">
+          Paradores
+        </h2>
+        <div className="flex flex-wrap md:grid md:grid-cols-2 md:flex-none gap-12 justify-center mx-4 md:mx-0 my-8 ">
+          {paradores.map((parador, index) => (
+            <div
+              key={index}
+              className="relative bg-white dark:bg-gray-800 p-6 shadow-xl rounded-xl hover:shadow-2xl transition-all duration-300 ease-in-out"
+              data-aos="fade-up"
+              data-aos-delay={index * 50} 
+
+            >
+              <div className="absolute inset-0 bg-gradient-to-tr from-transparent to-gray-50 dark:to-gray-800 opacity-0 hover:opacity-20 transition-opacity duration-300 ease-in-out rounded-xl"></div>
+              <h3 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-white">{parador.title}</h3>
+              <p className="text-gray-700 dark:text-gray-300">{parador.description}</p>
+            </div>
+          ))}
         </div>
       </div>
-    </Parallax>
+    </div>
   );
 }
 

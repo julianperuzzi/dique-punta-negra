@@ -1,0 +1,59 @@
+[
+    {
+      "id": 1,
+      "name": "San Juan Bajo el Mar",
+      "services": ["Buceo"],
+      "contact": "-",
+      "phone": "0264 548-3335"
+    },
+    {
+      "id": 2,
+      "name": "Parador Punta Negra",
+      "services": ["Kayak", "Hidropedales", "Confiteria"],
+      "contact": "-",
+      "phone": "+34 900 842 269"
+    },
+    {
+      "id": 3,
+      "name": "Del Parque Aventura Punta Negra",
+      "services": ["Catamaran", "Confiteria", "Kayak", "Hidropedales"],
+      "contact": "-",
+      "phone": "264 414 8998"
+    },
+    {
+      "id": 4,
+      "name": "La Paz",
+      "services": ["Hidropedales", "Kayak", "Stand Up Paddle"],
+      "contact": "pedalpower@example.com",
+      "phone": "264 12345678"
+    },
+    {
+      "id": 5,
+      "name": "San Juan SUP",
+      "services": ["Stand Up Paddle"],
+      "contact": "pedalpower@example.com",
+      "phone": "264 12345678"
+    },
+    {
+      "id": 6,
+      "name": "Pesca King",
+      "services": ["Pesca Embarcado"],
+      "contact": "pescador@example.com",
+      "phone": "264 12345678"
+    },
+    {
+      "id": 7,
+      "name": "Pesca Cano",
+      "services": ["Pesca Embarcado"],
+      "contact": "pescador@example.com",
+      "phone": "264 12345678"
+    },
+    {
+      "id": 8,
+      "name": "Pesca Bueno",
+      "services": ["Pesca Embarcado"],
+      "contact": "pescador@example.com",
+      "phone": "264 12345678"
+    }
+  ]
+  
