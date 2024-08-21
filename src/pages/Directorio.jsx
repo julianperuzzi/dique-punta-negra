@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import PrestadoresData from "../data/prestadores.json";
 
 function Directorio() {
   const [prestadores, setPrestadores] = useState([]);
@@ -7,9 +8,8 @@ function Directorio() {
   const [filter, setFilter] = useState("All");
 
   useEffect(() => {
-    fetch('/src/data/prestadores.json')
-      .then(response => response.json())
-      .then(data => setPrestadores(data));
+    // Asigna los datos importados directamente al estado
+    setPrestadores(PrestadoresData);
   }, []);
 
   const filteredPrestadores = prestadores.filter((prestador) => {
