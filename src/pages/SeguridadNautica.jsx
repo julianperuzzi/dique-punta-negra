@@ -48,7 +48,7 @@ function SeguridadNautica() {
   );
 
   return (
-    <div className="relative text-black dark:text-white min-h-screen">
+    <div className="relative bg-gradient-to-bl from-neutral-300 via-white to-neutral-200 text-black dark:text-white min-h-screen">
       {/* Carrusel de imágenes */}
       <div className="absolute inset-0 z-0">
         <Swiper
@@ -91,7 +91,7 @@ function SeguridadNautica() {
       </div>
 
       {/* Contenido */}
-      <div className="relative z-20 flex flex-col items-center justify-center h-[60vh] md:h-[70vh]">
+      <div className="relative z-10 flex flex-col items-center justify-center h-[60vh] md:h-[70vh]">
         <h2 className="text-5xl font-bold mb-4 text-center text-white uppercase border-b-2 border-white/40 pb-8">
           Seguridad Náutica
         </h2>
@@ -99,7 +99,7 @@ function SeguridadNautica() {
       </div>
 
       {/* Secciones en zigzag */}
-      <div className="relative z-20 py-16 px-6">
+      <div className="relative z-10 py-16 px-6">
         <div className="container mx-auto" data-aos="fade-up">
           <Section
             reverse={false}
