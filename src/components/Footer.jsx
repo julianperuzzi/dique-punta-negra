@@ -10,14 +10,16 @@ import {
 const Footer = () => {
   // Textos en español
   const texts = {
-    name: "Desarollado por Julian Peruzzi",
+    name: "Desarrollado por Julian Peruzzi",
     description:
-      "Developer apasionado por crear experiencias web innovadoras y funcionales. Con experiencia en React y otras tecnologías modernas de desarrollo web.",
+      "Desarrollador apasionado por crear experiencias web innovadoras y funcionales.",
     contactTitle: "Contacto",
     location: "San Juan, Argentina",
     phone: "Teléfono: +54 9 2645 636968",
-    email: "Email: dev.julianperuzzi@gmail.com",
+    email: "Email: julianperuzzi.dev@gmail.com",
     followTitle: "Sígueme",
+    additionalInfo: "Este proyecto es una iniciativa propia que busca colaborar con prestadores locales para ofrecer sus servicios, mejorando la experiencia del turismo en San Juan.",
+    disclaimer: "La información de este sitio no se contempla como información oficial ni de difusión de organismos competentes. Si necesitas asesoramiento oficial, comunícate a los medios pertinentes.",
     copyright: "Todos los derechos reservados.",
   };
 
@@ -27,8 +29,16 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center">
           {/* Logo o Nombre */}
           <div className="mb-8 lg:mb-0">
-            <h3 className="text-xl font-bold text-white mb-2">{texts.name}</h3>
-            <p className="text-gray-400 text-md max-w-md">{texts.description}</p>
+            <h3 className="text-lg font-bold text-white mb-1">{texts.name}</h3>
+            <p className="text-gray-300 text-md max-w-md">
+              {texts.description}
+            </p>
+            <p className="text-gray-400 text-sm max-w-md mt-4 font-extralight">
+              {texts.additionalInfo}
+            </p>
+            <p className="text-gray-400 text-sm max-w-md mt-2 font-extralight">
+              {texts.disclaimer}
+            </p>
           </div>
 
           {/* Información de contacto */}
@@ -37,7 +47,14 @@ const Footer = () => {
             <ul className="text-gray-300 space-y-2">
               <li>{texts.location}</li>
               <li>{texts.phone}</li>
-              <li>{texts.email}</li>
+              <li>
+                <a
+                  href={`mailto:${texts.email}`}
+                  className="hover:text-orange-500"
+                >
+                  {texts.email}
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -73,7 +90,7 @@ const Footer = () => {
                 <FaGithub size={28} />
               </a>
               <a
-                href="https://www.instagram.com/julianperuzzi/"
+                href="https://www.instagram.com/julianperuzzi.dev/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-pink-500 transition duration-200"
@@ -82,7 +99,7 @@ const Footer = () => {
                 <FaInstagram size={28} />
               </a>
               <a
-                href="mailto: dev.julianperuzzi@gmail.com"
+                href="mailto:julianperuzzi.dev@gmail.com"
                 className="text-gray-400 hover:text-red-500 transition duration-200"
                 aria-label="Email"
               >
