@@ -148,6 +148,12 @@ function SeguridadNautica() {
           />
         </div>
       </div>
+      <div className="text-center md:py-10 pb-10 mx-4">
+          <p className="text-2xl text-gray-700 dark:text-gray-300 font-bold">
+            Para comunicarte con <span className='text-orange-600'>Seguridad Náutica </span> , puedes llamar o enviar un
+            WhatsApp al número: <a href="tel:2646703953" className="text-orange-500 hover:text-orange-700">2646703953</a>
+          </p>
+        </div>
     </div>
   );
 }
