@@ -82,7 +82,7 @@ function ActivitiesScreen() {
             <div
               key={index}
               className="flex-1 min-w-[300px] bg-white p-4 shadow-lg flex flex-col justify-between backdrop-blur-md rounded-tl-xl"
-              data-aos="fade-up"
+              data-aos="zoom-in"
               data-aos-delay={index * 50}
             >
               <div>

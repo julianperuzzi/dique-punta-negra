@@ -114,7 +114,7 @@ function ResourcesScreen() {
 
           {/* Mapa de Google */}
           <div className="md:w-1/3 flex justify-center mb-8 md:mb-0">
-            <div className="relative w-full shadow-xl rounded-xl overflow-hidden" data-aos="fade-left">
+            <div className="relative w-full shadow-xl rounded-xl overflow-hidden" data-aos="zoom-in">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8906.267574453095!2d-68.83570083227434!3d-31.525902604021393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96814c6d428e14e5%3A0x6625f10804493022!2sEmbarcadero%20Punta%20Negra!5e0!3m2!1ses!2sar!4v1722642197572!5m2!1ses!2sar"
                 width="600"

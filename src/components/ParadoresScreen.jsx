@@ -45,7 +45,7 @@ function ParadoresScreen() {
             <div
               key={index}
               className="relative bg-white dark:bg-gray-800 p-6 shadow-xl rounded-xl hover:shadow-2xl transition-all duration-300 ease-in-out"
-              data-aos="fade-up"
+              data-aos="zoom-in"
               data-aos-delay={index * 50} 
 
             >

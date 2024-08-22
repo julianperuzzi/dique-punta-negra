@@ -48,7 +48,7 @@ function SeguridadNautica() {
   );
 
   return (
-    <div className="relative bg-gradient-to-bl from-neutral-300 via-white to-neutral-200 text-black dark:text-white min-h-screen">
+    <div className="relative bg-gradient-to-bl from-neutral-300 via-white to-neutral-200 text-black dark:text-white min-h-screen ">
       {/* Carrusel de imágenes */}
       <div className="absolute inset-0 z-0">
         <Swiper
@@ -92,10 +92,16 @@ function SeguridadNautica() {
 
       {/* Contenido */}
       <div className="relative z-10 flex flex-col items-center justify-center h-[60vh] md:h-[70vh]">
-        <h2 className="text-5xl font-bold mb-4 text-center text-white uppercase border-b-2 border-white/40 pb-8">
-          Seguridad Náutica
+        <div className='absolute top-0 w-full h-96'>
+      <h2 className="md:text-4xl text-2xl font-bold text-center text-white uppercase  backdrop-blur-md pb-8 bg-black/10 w-full md:rounded-b-full px-4 pt-24">
+          Seguridad en los Diques
         </h2>
-        <p className="text-xl text-center text-gray-200 mb-12 uppercase">San Juan, Argentina</p>
+        </div>
+        
+        <h2 className="text-md mb-4 text-center text-gray-200 pb-8 pt-20">
+           A cargo de <br /> <span className='text-4xl uppercase text-white font-bold'> Seguridad Náutica</span>
+        </h2>
+        <p className="text-xl text-center text-gray-200 mb-8 uppercase">San Juan, Argentina</p>
       </div>
 
       {/* Secciones en zigzag */}
