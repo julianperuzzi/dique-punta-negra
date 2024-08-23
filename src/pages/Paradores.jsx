@@ -1,16 +1,13 @@
-// src/pages/Paradores.jsx
 import React, { useState, useEffect } from 'react';
+import paradoresData from '../data/paradores.json'; // Importa el JSON directamente
 
 const Paradores = () => {
   const [paradores, setParadores] = useState([]);
   const [selectedParador, setSelectedParador] = useState(null);
 
   useEffect(() => {
-    // Cargar los datos del JSON
-    fetch('./src/data/paradores.json')
-      .then(response => response.json())
-      .then(data => setParadores(data))
-      .catch(error => console.error('Error fetching paradores:', error));
+    // Usar el JSON importado directamente
+    setParadores(paradoresData);
   }, []);
 
   const handleSelect = (id) => {
