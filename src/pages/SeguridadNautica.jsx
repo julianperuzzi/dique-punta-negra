@@ -48,7 +48,7 @@ function SeguridadNautica() {
   );
 
   return (
-    <div className="relative bg-gradient-to-bl from-neutral-300 via-white to-neutral-200 text-black dark:text-white min-h-screen ">
+    <div className="relative bg-gradient-to-bl from-neutral-300 via-white to-neutral-200 text-black dark:text-white min-h-screen dark:bg-gray-900">
       {/* Carrusel de imágenes */}
       <div className="absolute inset-0 z-0">
         <Swiper
@@ -91,7 +91,7 @@ function SeguridadNautica() {
       </div>
 
       {/* Contenido */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-[60vh] md:h-[70vh]">
+      <div className="relative z-10 flex flex-col items-center justify-center h-[60vh] md:h-[70vh] ">
         <div className='absolute top-0 w-full h-96'>
       <h2 className="md:text-4xl text-2xl font-bold text-center text-white uppercase  backdrop-blur-md pb-8 bg-black/10 w-full md:rounded-b-full px-4 pt-24">
           Seguridad en los Diques
@@ -105,7 +105,7 @@ function SeguridadNautica() {
       </div>
 
       {/* Secciones en zigzag */}
-      <div className="relative z-10 py-16 px-6">
+      <div className="relative z-10 py-16 px-6 dark:bg-gray-900">
         <div className="container mx-auto" data-aos="fade-up">
           <Section
             reverse={false}
@@ -154,8 +154,8 @@ function SeguridadNautica() {
           />
         </div>
       </div>
-      <div className="text-center md:py-10 pb-10 mx-4">
-          <p className="text-2xl text-gray-700 dark:text-gray-300 font-bold">
+      <div className="text-center md:py-10 pb-10 mx-4 ">
+          <p className="text-2xl text-gray-700 font-bold ">
             Para comunicarte con <span className='text-orange-600'>Seguridad Náutica </span> , puedes llamar o enviar un
             WhatsApp al número: <a href="tel:2646703953" className="text-orange-500 hover:text-orange-700">2646703953</a>
           </p>

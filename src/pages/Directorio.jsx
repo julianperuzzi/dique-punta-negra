@@ -90,7 +90,7 @@ function Directorio() {
                   Teléfono:{" "}
                   <a
                     href={`tel:${prestador.phone}`}
-                    className="text-slate-800 hover:text-orange-300"
+                    className="text-gray-600 dark:text-gray-300 hover:text-orange-300"
                   >
                     {prestador.phone}
                   </a>

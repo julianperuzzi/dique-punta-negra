@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import Breadcrumbs from './components/Breadcrumbs';
+import Chatbot from './components/Chatbot';
 
 import Inicio from './pages/Inicio';
 import Embarcaciones from './pages/Embarcaciones';
@@ -40,6 +41,7 @@ function App() {
           </Routes>
         
         <Footer />
+        <Chatbot />
       </div>
     </Router>
   );
