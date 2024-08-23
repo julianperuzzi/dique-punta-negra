@@ -32,9 +32,7 @@ function ParadoresScreen() {
   }, []);
 
   return (
-    <div className="relative min-h-screen flex flex-col items-center py-10">
-      {/* Fondo */}
-      <div className="absolute inset-0  dark:to-black"></div>
+    <div className="relative min-h-screen flex flex-col items-center justify-center py-10">
 
       <div className="container mx-auto relative z-10">
         <h2 className="text-5xl font-bold mb-6 text-center text-gray-900 dark:text-white" data-aos="fade-up">
@@ -55,7 +53,7 @@ function ParadoresScreen() {
           ))}
         </div>
         {/* Botón para ir a la página de Paradores */}
-        <div className="mt-8 text-center">
+        <div className="mt-16 text-center">
           <Link
             to="/paradores"
             className="inline-block bg-gray-700 text-white px-6 py-3 shadow-md hover:bg-gray-900 transition duration-300 ease-in-out"

@@ -43,11 +43,11 @@ const Paradores = () => {
         {/* Información del parador seleccionado */}
         <div className="md:w-2/3">
           {!selectedParador ? (
-            <div className="p-4 mx-4 bg-white shadow-lg rounded-lg">
-              <p className="text-md font-semibold">Por favor, selecciona un parador para ver su información.</p>
+            <div className="p-4 mx-4 mt-8 bg-white shadow-lg rounded-lg">
+              <p className="text-md font-semibold text-orange-400">Por favor, selecciona un parador para ver su información.</p>
             </div>
           ) : (
-            <div className="mt-6 md:mt-0 p-4 mx-4 bg-white shadow-lg rounded-lg">
+            <div className="mt-6 md:mt-0 p-4 md:mx-4 bg-white shadow-lg rounded-lg">
               <h2 className="text-2xl font-semibold mb-2">{selectedParador.name}</h2>
               <img
                 src={selectedParador.image}
