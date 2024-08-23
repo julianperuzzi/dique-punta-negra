@@ -91,15 +91,14 @@ function SeguridadNautica() {
       </div>
 
       {/* Contenido */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-[60vh] md:h-[70vh] ">
-        <div className='absolute top-0 w-full h-96'>
-      <h2 className="md:text-4xl text-2xl font-bold text-center text-white uppercase  backdrop-blur-md pb-8 bg-black/10 w-full md:rounded-b-full px-4 pt-24">
+      <div className="relative z-10 flex flex-col items-center justify-center h-[60vh] md:h-[70vh] backdrop-blur-sm">
+
+        <h2 className="md:text-4xl text-3xl font-bold text-center text-white uppercase pb-8 w-full md:rounded-b-full px-4  pt-28">
           Seguridad en los Diques
         </h2>
-        </div>
         
-        <h2 className="text-md mb-4 text-center text-gray-200 pb-8 pt-20">
-           A cargo de <br /> <span className='text-4xl uppercase text-white font-bold'> Seguridad Náutica</span>
+        <h2 className="text-md mb-4 text-center text-gray-200 pb-8 font-thin">
+           A cargo de <br /> <span className='text-4xl  text-white font-thin'> Seguridad Náutica</span>
         </h2>
         <p className="text-xl text-center text-gray-200 mb-8 uppercase">San Juan, Argentina</p>
       </div>
