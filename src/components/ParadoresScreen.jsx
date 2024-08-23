@@ -40,7 +40,7 @@ function ParadoresScreen() {
         <h2 className="text-5xl font-bold mb-6 text-center text-gray-900 dark:text-white" data-aos="fade-up">
           Paradores
         </h2>
-        <div className="flex flex-wrap md:grid md:grid-cols-2 md:flex-none gap-12 justify-center mx-4 md:mx-0 my-8 ">
+        <div className="flex flex-wrap md:grid md:grid-cols-2 md:flex-none md:gap-12 gap-4 justify-center mx-4 md:mx-0 my-8 ">
           {paradores.map((parador, index) => (
             <div
               key={index}
