@@ -58,7 +58,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
               onClick={handleResourcesClick}
               className="text-orange-500 dark:text-gray-200 hover:text-white dark:hover:text-white transition duration-300 px-4 py-2 hover:bg-orange-500 dark:hover:bg-gray-700"
             >
-              Recursos ↓
+              Recursos ▾
             </button>
             {isResourcesOpen && (
               <div

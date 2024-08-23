@@ -22,7 +22,7 @@ function SafetySection() {
           src={imgNautica}
           alt="Seguridad Náutica"
           className="h-[80vh] w-full object-cover brightness-75 ml-8"
-          data-aos="fade-right" // Añade la animación de AOS
+          data-aos="fade-left" // Añade la animación de AOS
         />
       </div>
 
