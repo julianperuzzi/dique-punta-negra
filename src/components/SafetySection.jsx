@@ -22,14 +22,14 @@ function SafetySection() {
           src={imgNautica}
           alt="Seguridad Náutica"
           className="h-[80vh] w-full object-cover brightness-75 ml-8"
-          data-aos="fade-left" // Añade la animación de AOS
+          data-aos="fade-right" // Añade la animación de AOS
         />
       </div>
 
       {/* Contenedor de contenido con espacio en el lado derecho en modo escritorio */}
       <div
         className="relative z-10 container mx-auto px-6 md:pl-12 md:pr-24 flex flex-col md:flex-row-reverse items-center justify-center md:justify-start"
-        data-aos="fade-left" // Añade la animación de AOS
+        data-aos="fade-rigth" // Añade la animación de AOS
       >
         <img
           src={imgNautica}
