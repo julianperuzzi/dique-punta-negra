@@ -14,6 +14,8 @@ import CondicionesClimaticas from './pages/CondicionesClimaticas';
 import NotFound from './pages/NotFound';
 import Prestador from './pages/Prestador';
 import SeguridadNautica from './pages/SeguridadNautica';
+import Paradores from './pages/Paradores';
+
 
 
 
@@ -37,7 +39,9 @@ function App() {
             <Route path='/Clima' element={<CondicionesClimaticas />} />
             <Route path='/SeguridadNautica' element={<SeguridadNautica />} />
             <Route path="/Prestador/:id" element={<Prestador />} />
+            <Route path="/Paradores" element={<Paradores />} />
             <Route path='/*' element={<NotFound/>} />
+
           </Routes>
         
         <Footer />

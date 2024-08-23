@@ -21,7 +21,7 @@ function Prestador() {
     if (foundPrestador) {
       setPrestador(foundPrestador);
     } else {
-      navigate('/directorio');
+      navigate('/Directorio');
     }
   }, [id, navigate]);
 
@@ -74,7 +74,7 @@ function Prestador() {
           </div>
 
           <button
-            onClick={() => navigate('/directorio')}
+            onClick={() => navigate('/Directorio')}
             className="mt-6 w-fit bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded"
             data-aos="fade-up"
           >
