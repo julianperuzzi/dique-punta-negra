@@ -6,82 +6,82 @@
       "address": "La Paz, Zonda, San Juan, Argentina",
       "activities": [
         {
-          "name": "Senderismo",
-          "price": ".. ARS por persona"
+          "name": "Actividad",
+          "price": "ARS por hora"
         },
         {
-          "name": "Kayak",
-          "price": ".. ARS por persona"
+          "name": "Actividad",
+          "price": "ARS por hora"
         },
         {
-          "name": "Otros ejemplo",
-          "price": ".. ARS por grupo"
+          "name": "Actividad",
+          "price": "ARS por hora"
         }
       ],
       "image": "https://live.staticflickr.com/65535/53458379995_3c3a86f762_o.jpg"
     },
     {
       "id": 2,
-      "name": "Parador Náutico",
-      "description": "Ideal para los amantes de las actividades acuáticas, ofrece acceso directo al agua para prácticas de kayak, paddle surf y pesca.",
-      "address": "Aqui va texto, San Juan, Argentina",
-      "activities": [
-        {
-          "name": "Alquiler de kayak",
-          "price": "ARS por hora"
-        },
-        {
-          "name": "Paddle surf",
-          "price": " ARS por hora"
-        },
-        {
-          "name": "Otro ejemplo",
-          "price": "ARS por día"
-        }
-      ],
-      "image": "https://example.com/images/parador-nautico.jpg"
-    },
-    { 
-      "id": 3,
-      "name": "Parador del Bosque",
+      "name": "Parador -nombre-",
       "description": "Ubicado en el punto más bajo del dique, ofrece vistas panorámicas y actividades al aire libre como senderismo y actividades nauticas",
       "address": "Aqui va texto, San Juan, Argentina",
       "activities": [
         {
-          "name": "Caminatas guiadas",
-          "price": " ARS por persona"
+          "name": "Actividad",
+          "price": "ARS por hora"
         },
         {
-          "name": "Otro ejemplo",
-          "price": " ARS por noche"
+          "name": "Actividad",
+          "price": "ARS por hora"
         },
         {
-          "name": "Otro ejemplo",
-          "price": " ARS por grupo"
+          "name": "Actividad",
+          "price": "ARS por hora"
         }
       ],
-      "image": "https://example.com/images/parador-bosque.jpg"
+      "image": ""
     },
-    {
-      "id": 4,
-      "name": "Parador de Aventura",
-      "description": "Perfecto para los buscadores de adrenalina, ofrece actividades como escalada, ciclismo de montaña y rutas extremas.",
+    { 
+      "id": 3,
+      "name": "Parador -nombre-",
+      "description": "Ubicado en el punto más bajo del dique, ofrece vistas panorámicas y actividades al aire libre como senderismo y actividades nauticas",
       "address": "Aqui va texto, San Juan, Argentina",
       "activities": [
         {
-          "name": "Escalada",
-          "price": " ARS por sesión"
+          "name": "Actividad",
+          "price": "ARS por hora"
         },
         {
-          "name": "Ciclismo de montaña",
-          "price": " ARS por hora"
+          "name": "Actividad",
+          "price": "ARS por hora"
         },
         {
-          "name": "Otro ejemplo",
-          "price": " ARS por grupo"
+          "name": "Actividad",
+          "price": "ARS por hora"
         }
       ],
-      "image": "https://example.com/images/parador-aventura.jpg"
+      "image": ""
+    },
+    {
+      "id": 4,
+      "name": "Parador -nombre-",
+      "description": "Ubicado en el punto más bajo del dique, ofrece vistas panorámicas y actividades al aire libre como senderismo y actividades nauticas",
+      "address": "Aqui va texto, San Juan, Argentina",
+      "activities": [
+        {
+          "name": "Actividad",
+          "price": "ARS por hora"
+        },
+        {
+          "name": "Actividad",
+          "price": "ARS por hora"
+        },
+        {
+          "name": "Actividad",
+          "price": "ARS por hora"
+        }
+      ],
+      "image": ""
     }
   ]
   
