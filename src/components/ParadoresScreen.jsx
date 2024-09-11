@@ -51,7 +51,7 @@ function ParadoresScreen() {
           {paradores.map((parador, index) => (
             <div
               key={index}
-              className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row'} items-center bg-white dark:bg-gray-800 shadow-xl  hover:shadow-2xl transition-all duration-300 ease-in-out mb-2 mb:mb-0`}
+              className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row'} items-center bg-white dark:bg-gray-800 shadow-xl  hover:shadow-2xl transition-all duration-300 ease-in-out mb-2 md:mb-0`}
               data-aos="zoom-in"
               data-aos-delay={index * 50}
             >
