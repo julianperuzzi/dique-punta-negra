@@ -35,7 +35,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Inicio />} />
             <Route path='/Embarcaciones' element={<Embarcaciones />} />
-            <Route path='/directorio' element={<Directorio />} />
+            <Route path='/Actividades' element={<Directorio />} />
             <Route path='/Clima' element={<CondicionesClimaticas />} />
             <Route path='/SeguridadNautica' element={<SeguridadNautica />} />
             <Route path="/Paradores" element={<Paradores />} />

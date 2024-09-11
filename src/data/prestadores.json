@@ -3,7 +3,7 @@
     "id": 1,
     
     "services": ["Buceo"],
-    "contact": "-",
+    "contact": "",
     "phone": "0264 548-3335",
     "description": "Explora el mundo subacuático con nuestros expertos en buceo.",
     "operationHours": "Lunes a Viernes: 9 AM - 6 PM",
@@ -47,7 +47,7 @@
     "id": 3,
     
     "services": ["Pesca Embarcado"],
-    "contact": "-",
+    "contact": "",
     "phone": "+54 9 2645 81-9674",
     "description": "Embarcate a Pescar en la inmensidad del Dique Punta Negra. He dictado clínicas de pesca en distintos lugares, como así también he participado en distintas clínicas de pesca. Realizo excursiones de pesca a otros países. Realizo notas relacionadas con la pesca  para distintas revistas a nivel nacional",
     "operationHours": "Todos los días: 9 AM - 6 PM",

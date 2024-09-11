@@ -46,10 +46,10 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
           </Link>
 
           <Link
-            to="/Directorio"
+            to="/Actividades"
             className="text-orange-500 dark:text-gray-200 hover:text-white dark:hover:text-white transition duration-300 px-4 py-2 hover:bg-orange-500 dark:hover:bg-gray-700"
           >
-            Directorio
+            Actividades
           </Link>
 
           {/* Enlace de Recursos con submenú desplegable */}
@@ -106,11 +106,11 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                 Inicio
               </Link>
               <Link
-                to="/Directorio"
+                to="/Actividades"
                 className="text-white dark:text-orange-200 hover:text-orange-100 dark:hover:text-orange-300 transition duration-300 px-4 py-2 hover:bg-gray-700"
                 onClick={() => setIsOpen(false)}
               >
-                Directorio
+                Actividades
               </Link>
               <Link
                 to="/Embarcaciones"
