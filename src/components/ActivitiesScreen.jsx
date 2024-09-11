@@ -90,8 +90,8 @@ function ActivitiesScreen() {
                 <p className="text-gray-700 mb-3 text-sm">{activity.description}</p>
               </div>
               <div>
-                <Link to="/directorio" className="text-teal-600 font-semibold text-sm hover:underline">
-                  Ir a Directorio de Prestadores
+                <Link to="/Actividades" className="text-teal-600 font-semibold text-sm hover:underline">
+                  Ir a Directorio de Actividades
                 </Link>
               </div>
             </div>
