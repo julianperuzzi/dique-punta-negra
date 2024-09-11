@@ -4,7 +4,14 @@ import "swiper/css"; // Importa los estilos principales de Swiper
 import "swiper/css/navigation"; // Importa los estilos de la navegación
 import "swiper/css/pagination"; // Importa los estilos de la paginación
 import { Navigation, Pagination } from "swiper/modules";
-import { FaInstagram, FaFacebook, FaPhone, FaMapMarkerAlt, FaWhatsapp, FaTimes } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaFacebook,
+  FaPhone,
+  FaMapMarkerAlt,
+  FaWhatsapp,
+  FaTimes,
+} from "react-icons/fa";
 
 function Modal({ isOpen, onClose, prestador }) {
   const modalRef = useRef(null);
@@ -18,7 +25,6 @@ function Modal({ isOpen, onClose, prestador }) {
   if (!isOpen) return null;
 
   // Asegúrate de tener un enlace embebible para Google Maps.
-  // Si el enlace no es embebible, ajusta este valor con la URL correcta.
   const embedLocation = prestador.location.replace(
     "https://maps.app.goo.gl/",
     "https://www.google.com/maps/embed?pb="
@@ -27,15 +33,15 @@ function Modal({ isOpen, onClose, prestador }) {
   return (
     <div
       onClick={handleOutsideClick}
-      className="fixed inset-0 bg-black/50 bg-opacity-50 flex justify-center items-center z-50 pt-4 backdrop-blur-md shadow-xl"
+      className="fixed inset-0 bg-black/50 bg-opacity-50 flex justify-center items-center z-50 backdrop-blur-md shadow-xl overflow-y-auto py-2"
     >
       <div
         ref={modalRef}
-        className="bg-white pb-8 pt-0 shadow-lg relative w-10/12 md:max-h-[95vh] overflow-y-auto "
+        className="bg-white shadow-lg relative w-11/12 md:w-10/12 md:max-h-[95vh] h-full overflow-y-auto rounded-lg"
       >
         <button
           onClick={onClose}
-          className="absolute top-2 right-2 text-gray-600 hover:text-red-500 z-10 backdrop-blur-xl p-2"
+          className="absolute top-2 right-2 text-teal-600 hover:text-red-500 z-10 backdrop-blur-xl p-2"
         >
           <FaTimes size={24} />
         </button>
@@ -53,13 +59,13 @@ function Modal({ isOpen, onClose, prestador }) {
               <img
                 src={img}
                 alt={`Imagen ${index + 1}`}
-                className="w-full h-64 md:h-96 object-cover lg"
+                className="w-full h-64 md:h-96 object-cover"
               />
             </SwiperSlide>
           ))}
         </Swiper>
 
-        <div className="mx-4">
+        <div className="px-4 py-6">
           <h3 className="text-2xl font-bold text-gray-600 mb-4">
             {prestador.name}
           </h3>
@@ -147,7 +153,9 @@ function Modal({ isOpen, onClose, prestador }) {
             </a>
 
             <a
-              href={`https://wa.me/${prestador.phone.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(" *Hola buenos días!* Me contacto para más información")}`}
+              href={`https://wa.me/${prestador.phone.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
+                " *Hola buenos días!* Me contacto para más información"
+              )}`}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center bg-green-600 hover:bg-green-800 text-white px-4 py-2 shadow-md space-x-2"
@@ -155,7 +163,6 @@ function Modal({ isOpen, onClose, prestador }) {
               <FaWhatsapp />
               <span>WhatsApp</span>
             </a>
-
           </div>
 
           {/* Mensaje Adicional */}
