@@ -34,8 +34,8 @@ function Directorio() {
   return (
     <div className="bg-gray-200 dark:bg-gray-900 py-24 px-6 min-h-screen">
       <div className="container mx-auto">
-        <h1 className="text-4xl font-bold mb-8 text-center text-gray-900 dark:text-white">
-          Directorio de Prestadores y Paradores
+        <h1 className="text-4xl font-bold my-8 text-center text-gray-900 dark:text-white">
+          Directorio de Actividades
         </h1>
 
         <div className="flex flex-col md:flex-row items-center justify-around mb-8">
