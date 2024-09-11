@@ -77,7 +77,7 @@ function ActivitiesScreen() {
           Actividades
         </h2>
         
-        <div className="flex flex-wrap md:grid md:grid-cols-4 md:flex-none gap-6 mx-4 md:mx-0 my-8">
+        <div className="flex flex-wrap md:grid md:grid-cols-4 md:flex-none gap-4 mx-2 md:mx-0 my-8">
           {displayedActivities.map((activity, index) => (
             <div
               key={index}
@@ -90,7 +90,7 @@ function ActivitiesScreen() {
                 <p className="text-gray-700 mb-3 text-sm">{activity.description}</p>
               </div>
               <div>
-                <Link to="/directorio" className="text-orange-500 font-semibold text-sm hover:underline">
+                <Link to="/directorio" className="text-teal-600 font-semibold text-sm hover:underline">
                   Ir a Directorio de Prestadores
                 </Link>
               </div>

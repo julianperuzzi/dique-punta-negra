@@ -1,37 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  // Configuración para el modo oscuro, 'class' es recomendado para mayor control
-  darkMode: 'class', // Alternativa: 'media' para detectar automáticamente el modo oscuro del sistema
-
-  // Definir los archivos donde Tailwind CSS buscará clases para generar estilos
+  darkMode: 'class',
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}", // Incluye todos los archivos en la carpeta src con las extensiones js, ts, jsx, tsx
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
-
-  // Personalización del tema
   theme: {
     extend: {
       fontFamily: {
-        display: ['Source Serif Pro', 'serif'],
-        body: ['Synonym', 'sans-serif'],
+        sans: ['Josefin Sans', 'sans-serif'], // Aplicar Josefin Sans como fuente principal
       },
-      // Aquí puedes extender el tema con colores personalizados, fuentes, etc.
       colors: {
-        primary: '#FF69B4', // Por ejemplo, un color primario rosa
-        secondary: '#FFFFFF', // Color secundario blanco
-        dark: '#1E293B', // Color para modo oscuro
+        primary: '#FF69B4',
+        secondary: '#FFFFFF',
+        dark: '#1E293B',
       },
-      // Puedes añadir más configuraciones personalizadas aquí
-      // Por ejemplo, más fuentes, tamaños, o espaciados personalizados
     },
   },
-
-  // Plugins adicionales que deseas usar con Tailwind CSS
-  plugins: [
-    // Ejemplo: Plugin para formularios personalizados
-    // require('@tailwindcss/forms'),
-    // Otro plugin podría ser para la tipografía
-    // require('@tailwindcss/typography'),
-  ],
+  plugins: [],
 }

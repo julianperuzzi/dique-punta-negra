@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import AOS from 'aos'; // Importa AOS
 import 'aos/dist/aos.css'; // Importa los estilos de AOS
 
-import imgNautica from '../assets/imgSeguridadNautica/imgNautica.jpg';
 
 function SafetySection() {
   // Inicializa AOS
@@ -19,9 +18,9 @@ function SafetySection() {
       {/* Contenedor de la imagen de fondo */}
       <div className="absolute hidden md:block md:left-0 md:w-1/2">
         <img
-          src={imgNautica}
+          src="https://images.pexels.com/photos/27771327/pexels-photo-27771327/free-photo-of-oceano-socorrista-olas-saluda.jpeg?auto=compress&cs=tinysrgb&w=600"
           alt="Seguridad Náutica"
-          className="h-[80vh] w-full object-cover brightness-75 ml-8"
+          className="h-[80vh] w-full object-cover ml-8"
           data-aos="fade-right" // Añade la animación de AOS
         />
       </div>
@@ -32,14 +31,14 @@ function SafetySection() {
         data-aos="fade-rigth" // Añade la animación de AOS
       >
         <img
-          src={imgNautica}
+          src="https://images.pexels.com/photos/27771327/pexels-photo-27771327/free-photo-of-oceano-socorrista-olas-saluda.jpeg?auto=compress&cs=tinysrgb&w=600"
           alt="Seguridad Náutica"
-          className="absolute md:hidden block h-96 w-full object-cover brightness-75 mb-8 top-0"
+          className="absolute md:hidden block h-96 w-full object-cover mb-8 top-0"
           data-aos="fade-down" // Añade la animación de AOS
         />
 
         <div
-          className="w-full md:w-3/5 p-4 bg-white dark:bg-slate-800 bg-opacity-80 dark:bg-opacity-80 shadow-lg backdrop-blur-lg rounded-lg mt-80 md:mt-auto"
+          className="w-full md:w-3/5 p-4 bg-white dark:bg-slate-800 bg-opacity-80 dark:bg-opacity-80 shadow-lg backdrop-blur-lg  mt-80 md:mt-auto"
           data-aos="fade-up" // Añade la animación de AOS
         >
           <h2 className="text-4xl font-bold mb-6 text-black/90 dark:text-white uppercase text-center md:text-left">

@@ -24,10 +24,10 @@ function Chatbot() {
     <div>
       {/* Botón para abrir/cerrar el chatbot */}
       <button
-        className={`fixed bottom-4 right-4 p-3 bg-orange-500 text-white rounded-full shadow-lg z-20 ${isOpen ? 'hidden' : 'block'}`}
+        className={`fixed bottom-4 right-4 p-3 bg-teal-600 text-white shadow-lg z-20 ${isOpen ? 'hidden' : 'block'}`}
         onClick={toggleChatbot}
       >
-        InfoBox 🏔️
+        InfoBox 💬
       </button>
 
       {isOpen && (

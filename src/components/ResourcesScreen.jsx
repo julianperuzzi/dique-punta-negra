@@ -12,7 +12,7 @@ function ResourcesScreen() {
   }, []);
 
   return (
-    <div className="py-12 px-6 text-black dark:text-white min-h-screen flex items-center justify-center">
+    <div className="py-12 px-2 text-black dark:text-white min-h-screen flex items-center justify-center">
       <div className="container mx-auto" data-aos="fade-up">
         <h2 className="text-5xl font-bold mb-10 text-center text-gray-900 dark:text-white">
           Conoce Más
@@ -22,8 +22,8 @@ function ResourcesScreen() {
         <div className="flex flex-col lg:flex-row gap-8">
           <div className="md:w-2/3 text-left">
             {/* Nueva sección: Cómo llegar al dique */}
-            <div className="bg-white dark:bg-gray-800 p-6 shadow-xl rounded-xl mb-8" data-aos="fade-up">
-              <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">
+            <div className="bg-white dark:bg-gray-800 p-6 shadow-xl  mb-8" data-aos="fade-up">
+              <h3 className="text-xl font-bold mb-4 text-teal-600 dark:text-white">
                 Cómo Llegar al Dique Punta Negra
               </h3>
               <p className="mb-4">
@@ -46,8 +46,8 @@ function ResourcesScreen() {
             </div>
 
             {/* Nueva sección: Transporte Público */}
-            <div className="bg-white dark:bg-gray-800 p-6 shadow-xl rounded-xl mb-8" data-aos="fade-up">
-              <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">
+            <div className="bg-white dark:bg-gray-800 p-6 shadow-xl  mb-8" data-aos="fade-up">
+              <h3 className="text-xl font-bold mb-4 text-teal-600 dark:text-white">
                 Transporte Público al Dique Punta Negra
               </h3>
               <p className="mb-4">
@@ -67,8 +67,8 @@ function ResourcesScreen() {
             </div>
 
             {/* Nueva sección: Información sobre embarcaciones */}
-            <div className="bg-white dark:bg-gray-800 p-6 shadow-xl rounded-xl mb-8" data-aos="fade-up">
-              <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">
+            <div className="bg-white dark:bg-gray-800 p-6 shadow-xl  mb-8" data-aos="fade-up">
+              <h3 className="text-xl font-bold mb-4 text-teal-600 dark:text-white">
                 Información sobre Embarcaciones
               </h3>
               <p className="mb-4">
@@ -84,8 +84,8 @@ function ResourcesScreen() {
               </Link>
             </div>
 
-            <div className="bg-white dark:bg-gray-800 p-6 shadow-xl rounded-xl" data-aos="fade-up">
-              <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">
+            <div className="bg-white dark:bg-gray-800 p-6 shadow-xl " data-aos="fade-up">
+              <h3 className="text-xl font-bold mb-4 text-teal-600 dark:text-white">
                 Área de Primeros Auxilios
               </h3>
               <p className="mb-4">
@@ -114,7 +114,7 @@ function ResourcesScreen() {
 
           {/* Mapa de Google */}
           <div className="md:w-1/3 flex justify-center mb-8 md:mb-0">
-            <div className="relative w-full shadow-xl rounded-xl overflow-hidden" data-aos="zoom-in">
+            <div className="relative w-full shadow-xl  overflow-hidden" data-aos="zoom-in">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8906.267574453095!2d-68.83570083227434!3d-31.525902604021393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96814c6d428e14e5%3A0x6625f10804493022!2sEmbarcadero%20Punta%20Negra!5e0!3m2!1ses!2sar!4v1722642197572!5m2!1ses!2sar"
                 width="600"

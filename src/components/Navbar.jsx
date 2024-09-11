@@ -28,7 +28,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
   };
 
   return (
-    <nav className="bg-white dark:bg-gray-950 shadow-lg fixed w-full z-30 mx-auto rounded-b-3xl">
+    <nav className="bg-white dark:bg-gray-950 shadow-lg fixed w-full z-30 mx-auto ">
       <div className="container mx-auto px-6 py-3 flex justify-between items-center">
         <Link
           to="/"

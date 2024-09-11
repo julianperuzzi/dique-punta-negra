@@ -1,59 +1,67 @@
 [
-    {
-      "id": 1,
-      "name": "San Juan Bajo el Mar",
-      "services": ["Buceo"],
-      "contact": "-",
-      "phone": "0264 548-3335"
+  {"name": "San Juan Bajo el Mar",
+    "id": 1,
+    
+    "services": ["Buceo"],
+    "contact": "-",
+    "phone": "0264 548-3335",
+    "description": "Explora el mundo subacuático con nuestros expertos en buceo.",
+    "operationHours": "Lunes a Viernes: 9 AM - 6 PM",
+    "prices": "Buceo: $1500 por persona",
+    "images": ["https://i.pinimg.com/originals/36/7f/27/367f27b8adc885df275ca6d22c22ecb9.jpg", "https://images.pexels.com/photos/3098971/pexels-photo-3098971.jpeg","https://images.pexels.com/photos/3113225/pexels-photo-3113225.jpeg", "https://images.pexels.com/photos/1276531/pexels-photo-1276531.jpeg"],
+    "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1261.678448679494!2d-68.83613019837534!3d-31.527997279266103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9681418f7579071b%3A0x7b44370149aef9bc!2sSan%20Juan%20Bajo%20el%20Mar!5e0!3m2!1sen!2sar!4v1726017773713!5m2!1sen!2sar",
+    "socialMedia": {
+      "instagram": "https://instagram.com/sanjuanbajoelmar",
+      "facebook": "https://facebook.com/sanjuanbajoelmar"
     },
-    {
-      "id": 2,
-      "name": "Parador Punta Negra",
-      "services": ["Kayak", "Hidropedales", "Confiteria"],
-      "contact": "-",
-      "phone": "+34 900 842 269"
+    "certifications": "Certificación PADI",
+    "languages": ["Español", "Inglés"],
+    "cancellationPolicy": "Cancelación gratuita hasta 24 horas antes.",
+    "maxCapacity": 8,
+    "duration": "2 horas"
+  },
+
+  {"name": "Parador Punta Negra",
+    "id": 2,
+    
+    "services": ["Kayak", "Hidropedales", "Confitería","Trekking"],
+    "contact": "paradorpuntanegra@gmail.com",
+    "phone": "264 15-453-2546",
+    "description": "Disfruta de una experiencia única en Punta Negra con actividades acuáticas.",
+    "operationHours": "Todos los días: 8 AM - 8 PM",
+    "prices": "Kayak $5000 la hora y $7000 las 2 horas. La hora de Big Sup o Sup $5000. La media hora de Triciclo/Snoop/Hidro $5000. Costos por persona.",
+    "images": ["https://scontent.fcor12-1.fna.fbcdn.net/v/t1.6435-9/75564588_2746567145393586_3087653243224850432_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeHcGixYCFJbcdOUf30HrPwL6phZdS2TebnqmFl1LZN5uQRJ_uEu7r5fhxImBbk99RGqUImxEx04BRXpidBL7A4s&_nc_ohc=J7MRzkfsu14Q7kNvgF1EBXW&_nc_ht=scontent.fcor12-1.fna&_nc_gid=A5jH08z6JdyA9r3-oJ9drpL&oh=00_AYBzi-KPT1Yq3XQ2Hpx7y-gx4LwC7kHP0b0xDDB-ytwIFg&oe=6708F31A","https://scontent.fcor12-1.fna.fbcdn.net/v/t39.30808-6/453436661_898705302283492_6705820504567781831_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeE9iReEuRD0z7REdJn12HmxnexMDwalf-6d7EwPBqV_7tx5tYcEKcU0mWP6uTamsucL0OSPb9jlpr6OeecFxJwi&_nc_ohc=UDMiqEGrk_sQ7kNvgELjF1Z&_nc_ht=scontent.fcor12-1.fna&oh=00_AYAEzDpg1TyRI0awU4BjHZyFv8l44zxGw6JIn639KLCycw&oe=66E781B6","https://scontent.fcor12-1.fna.fbcdn.net/v/t39.30808-6/453073568_895764419244247_8267800473567450075_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeF-mbI3tdRO14Srigu_ylUEMZqwLSWL8G4xmrAtJYvwbrIFHYsfmRf1zdboXqIvAUMWZcqgq2LwYTwc-1QhPCiC&_nc_ohc=RYR3-Ep35rAQ7kNvgF9yTL0&_nc_ht=scontent.fcor12-1.fna&_nc_gid=A2UYsd1KUD8NXQkqOXOnGnB&oh=00_AYCjoiNL721HE_ZbtSxVugiuGj-5E-PuuAQn15jwdk7kWw&oe=66E75EF9"],
+    "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.8545086241397!2d-68.83817657416284!3d-31.528155698353306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96814d0017adc48f%3A0x7fc79ea3ef444492!2sParador%20punta%20negra!5e0!3m2!1ses!2sar!4v1726062181140!5m2!1ses!2sar" ,
+    "socialMedia": {
+      "instagram": "https://www.instagram.com/paradorpuntanegra/",
+      "facebook": "https://www.facebook.com/paradorpuntanegra"
     },
-    {
-      "id": 3,
-      "name": "Del Parque Aventura Punta Negra",
-      "services": ["Catamaran", "Confiteria", "Kayak", "Hidropedales"],
-      "contact": "-",
-      "phone": "264 414 8998"
+    "certifications": "Prestador Turistico Autorizado",
+    "languages": ["Español", "Inglés"],
+    "cancellationPolicy": "Cancelación gratuita hasta 48 horas antes.",
+    "maxCapacity": 144,
+    "duration": "Según Servicio"
+  },
+   
+  {"name": "Pesca Carlos Cano",
+    "id": 3,
+    
+    "services": ["Pesca Embarcado"],
+    "contact": "-",
+    "phone": "+54 9 2645 81-9674",
+    "description": "Embarcate a Pescar en la inmensidad del Dique Punta Negra. He dictado clínicas de pesca en distintos lugares, como así también he participado en distintas clínicas de pesca. Realizo excursiones de pesca a otros países. Realizo notas relacionadas con la pesca  para distintas revistas a nivel nacional",
+    "operationHours": "Todos los días: 9 AM - 6 PM",
+    "prices": "Consultar",
+    "images": ["https://scontent.fcor12-1.fna.fbcdn.net/v/t1.6435-9/142373832_3624293624359004_3783733389737310943_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeEjk-ylI4GlDrOWpr3yNDohRT3BzAhXZ2hFPcHMCFdnaNd7EfWEDqJ8Q6QuYIQ3YVGy7XPEToeXFQ0T92e1vBk7&_nc_ohc=KCNA5yN6PN8Q7kNvgGuWl9D&_nc_ht=scontent.fcor12-1.fna&_nc_gid=AWUMXwxt1Emwr8gY2nWus2f&oh=00_AYCBrGeetf1qslWyfGsFLDkoXe0XnP3VhM4r9eQbhHqGyQ&oe=6708FF76","https://i.pinimg.com/originals/26/ed/5e/26ed5ef9091cb57f61ac523ee5c16778.jpg","https://scontent.fcor12-1.fna.fbcdn.net/v/t39.30808-6/385719731_6603724566415880_7343267658025391313_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFAN9FlZ74n3jADw-aV7EpCclX-G8gfcilyVf4byB9yKYrlAmJTcD2a7LFhEKd1Q2Ec_v8ogRvjorI1h980spGJ&_nc_ohc=9WYar8C9b6AQ7kNvgERlezI&_nc_ht=scontent.fcor12-1.fna&_nc_gid=AYcir0sKi7MCxjoZCWS4lKS&oh=00_AYCAVoKN1WDTLPYcoZuEL9u2Fplmqn3b-SK1RTncpXsU-w&oe=66E7690E"],
+    "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3118.1184103354485!2d-68.51422585476217!3d-31.542503224567014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96816a99c13d4c07%3A0xb9a28d3551e7597e!2sPESCA%20SAN%20JUAN%20-%20Art%C3%ADculos%20De%20Pesca!5e0!3m2!1ses!2sar!4v1726060790515!5m2!1ses!2sar",
+    "socialMedia": {
+      "instagram": "https://www.instagram.com/carlos.cano.pesca/",
+      "facebook": "https://www.facebook.com/pescasanjuancarloscano"
     },
-    {
-      "id": 4,
-      "name": "La Paz",
-      "services": ["Hidropedales", "Kayak", "Stand Up Paddle"],
-      "contact": "pedalpower@example.com",
-      "phone": "264 12345678"
-    },
-    {
-      "id": 5,
-      "name": "San Juan SUP",
-      "services": ["Stand Up Paddle"],
-      "contact": "pedalpower@example.com",
-      "phone": "264 12345678"
-    },
-    {
-      "id": 6,
-      "name": "Pesca King",
-      "services": ["Pesca Embarcado"],
-      "contact": "pescador@example.com",
-      "phone": "264 12345678"
-    },
-    {
-      "id": 7,
-      "name": "Pesca Cano",
-      "services": ["Pesca Embarcado"],
-      "contact": "pescador@example.com",
-      "phone": "264 12345678"
-    },
-    {
-      "id": 8,
-      "name": "Pesca Bueno",
-      "services": ["Pesca Embarcado"],
-      "contact": "pescador@example.com",
-      "phone": "264 12345678"
-    }
-  ]
-  
+    "certifications": "Certificación de Pesca Deportiva",
+    "languages": ["Español","Inglés"],
+    "cancellationPolicy": "Cancelación gratuita hasta 48 horas antes.",
+    "maxCapacity": 5,
+    "duration": "8 horas"
+  }
+]
