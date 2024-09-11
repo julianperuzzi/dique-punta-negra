@@ -37,7 +37,7 @@ function Modal({ isOpen, onClose, prestador }) {
     >
       <div
         ref={modalRef}
-        className="bg-white shadow-lg relative w-11/12 md:w-10/12 md:max-h-[95vh] h-full overflow-y-auto rounded-lg"
+        className="bg-white shadow-lg relative w-11/12 md:w-9/12 md:max-h-[95vh] h-full overflow-y-auto rounded-lg"
       >
         <button
           onClick={onClose}
@@ -65,13 +65,13 @@ function Modal({ isOpen, onClose, prestador }) {
           ))}
         </Swiper>
 
-        <div className="px-4 py-6">
-          <h3 className="text-2xl font-bold text-gray-600 mb-4">
+        <div className="px-4 md:py-6">
+          <h3 className="text-3xl font-bold text-teal-600 mb-4">
             {prestador.name}
           </h3>
 
           {/* Información del Prestador */}
-          <div className="space-y-2 grid md:grid-cols-2 grid-cols-1 w-full my-6">
+          <div className="space-y-2 grid md:grid-cols-2 grid-cols-1 w-full md:my-6">
             <div className="text-gray-600 space-y-4">
               <p>
                 <strong>Descripción:</strong> {prestador.description}
@@ -116,7 +116,7 @@ function Modal({ isOpen, onClose, prestador }) {
           </div>
 
           {/* Botones de Acción */}
-          <div className="flex flex-wrap gap-4 justify-around border-t-2 border-gray-100 pt-8">
+          <div className="flex md:flex-wrap flex-col md:flex-row gap-4 justify-around border-t-2 border-gray-100 pt-8">
             <a
               href={prestador.location}
               target="_blank"
