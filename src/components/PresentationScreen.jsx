@@ -1,7 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import video from '../assets/videos/5104156-hd_1280_720_30fps.mp4'; // Importa el video
 
 function PresentationScreen() {
+  useEffect(() => {
+    // Cargar el script del widget de clima
+    const script = document.createElement('script');
+    script.src = 'https://weatherwidget.io/js/widget.min.js';
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      // Limpieza: elimina el script cuando el componente se desmonte
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <section className="relative">
       {/* Video de fondo */}
@@ -16,12 +29,40 @@ function PresentationScreen() {
       {/* Contenido superpuesto */}
       <section className="bg-black bg-opacity-30 dark:bg-opacity-80 backdrop-blur-sm h-screen flex flex-col items-center justify-center relative">
         <div className="text-left md:text-center text-white p-10 relative z-10">
-          <h1 className="text-5xl md:text-7xl font-bold mb-4 md:pb-6 text-shadow" data-aos="fade-up">
+          <h1
+            className="text-5xl md:text-7xl font-bold mb-4 md:pb-6 text-shadow"
+            data-aos="fade-up"
+          >
             Bienvenidos al Dique<span className="text-orange-500"> Punta Negra</span>
           </h1>
-          <p className="text-lg md:text-2xl border-l-4 border-orange-500 pl-4 md:pl-0 md:border-l-0 md:border-t-2 md:pt-4" data-aos="fade-up" data-aos-delay="200">
+          <p
+            className="text-lg md:text-2xl border-l-4 border-orange-500 pl-4 md:pl-0 md:border-l-0 md:border-t-2 md:pt-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             Descubre un lugar único en San Juan, Argentina. Explora sus actividades y servicios.
           </p>
+
+          {/* Widget del clima */}
+          <div
+            className="mt-4 text-center relative z-10 w-40 mx-auto"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <a
+              className="weatherwidget-io"
+              href="https://forecast7.com/es/n31d56n68d73/zonda/"
+              data-font="Fira Sans"
+              data-icons="Climacons Animated"
+              data-mode="Current"
+              data-theme="gray"
+              data-basecolor="rgba(255, 255, 255, 0)"
+              data-shadow="rgba(0, 0, 0, 0.6)"
+              data-suncolor="#ffb815"
+            >
+              ZONDA WEATHER
+            </a>
+          </div>
         </div>
       </section>
     </section>
