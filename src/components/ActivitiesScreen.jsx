@@ -34,7 +34,7 @@ const activities = [
   },
   {
     title: 'Buceo',
-    description: 'Explora Punta Negra aprendiendo o practicando buceo debajo del el agua.',
+    description: 'Explora Punta Negra aprendiendo o practicando buceo debajo del agua.',
   },
   {
     title: 'Juegos de Playa',
@@ -69,15 +69,14 @@ function ActivitiesScreen() {
   }, []);
 
   return (
-    <div className="min-h-screen flex items-center relative ">
+    <div className="min-h-screen flex items-center relative mb-10 md:mb-0">
 
-      
       <div className="container mx-auto relative z-10">
-      <h2 className="text-5xl font-bold my-10 text-center text-gray-900 dark:text-white" data-aos="fade-up">
+        <h2 className="text-5xl font-bold my-10 text-center text-gray-900 dark:text-white" data-aos="fade-up">
           Actividades
         </h2>
         
-        <div className="flex flex-wrap md:grid md:grid-cols-4 md:flex-none gap-4 mx-2 md:mx-0 my-8">
+        <div className="flex flex-wrap md:grid md:grid-cols-4 md:flex-none gap-4 mx-2 md:mx-0 md:my-8">
           {displayedActivities.map((activity, index) => (
             <div
               key={index}
@@ -90,16 +89,16 @@ function ActivitiesScreen() {
                 <p className="text-gray-700 mb-3 text-sm">{activity.description}</p>
               </div>
               <div>
-                <Link to="/Actividades" className="text-teal-600 font-semibold text-sm hover:underline">
+                <Link to="/Actividades" className="text-teal-600 font-semibold text-sm hover:underline ">
                   Ir a Directorio de Actividades
                 </Link>
               </div>
             </div>
           ))}
         </div>
-        
+
         {!showAll && (
-          <div className="text-center mt-4">
+          <div className="text-center md:mt-4">
             <button 
               onClick={handleShowMore} 
               className="bg-orange-600 text-white py-2 px-4 hover:bg-orange-500 my-8"
@@ -108,6 +107,17 @@ function ActivitiesScreen() {
             </button>
           </div>
         )}
+
+        {/* Botón adicional para redirigir a la página completa de actividades */}
+        <div className="text-center md:mt-8">
+          <Link 
+            to="/Actividades" 
+            className="bg-teal-600 text-white py-3 px-6 hover:bg-teal-500 font-medium uppercase tracking-wider transition-all duration-200 shadow-lg shadow-teal-800"
+          >
+            Directorio de Actividades ✨
+          </Link>
+        </div>
+
       </div>
     </div>
   );
