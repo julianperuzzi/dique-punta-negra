@@ -38,7 +38,7 @@ function PresentationScreen() {
             Descubre un lugar único en San Juan, Argentina.
           </p>
           <h1
-            className="text-4xl md:text-6xl md:pb-6 text-shadow"
+            className="text-5xl md:text-6xl md:pb-6 text-shadow"
             data-aos="fade-up"
           >
           Dique Punta Negra
