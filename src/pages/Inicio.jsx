@@ -32,13 +32,16 @@ function Inicio() {
 
       <span className='border-t border-gray-400/60 mx-8'></span>
 
-      {/* Recursos */}
-      <ResourcesScreen />
-      <span className='border-t border-gray-400/60 mx-8'></span>
+
 
 
       {/* Información de Paradores */}
       <ParadoresScreen />
+      <span className='border-t border-gray-400/60 mx-8'></span>
+
+
+       {/* Recursos */}
+       <ResourcesScreen />
       <span className='border-t border-gray-400/60 mx-8'></span>
 
       
