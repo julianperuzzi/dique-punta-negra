@@ -44,7 +44,7 @@ function ParadoresScreen() {
   return (
     <div className="relative min-h-screen flex flex-col items-center justify-center py-10">
       <div className="container mx-auto relative z-10">
-        <h2 className="text-4xl font-bold mb-6 text-center text-gray-900 dark:text-white" data-aos="fade-up">
+        <h2 className="text-4xl mb-6 text-center text-gray-900 dark:text-white" data-aos="fade-up">
           Paradores
         </h2>
         <div className="flex flex-col justify-center mx-2 md:mx-0 my-8">
