@@ -44,7 +44,7 @@ function App() {
           </Routes>
         
         <Footer />
-        <Chatbot />
+        {/* <Chatbot /> */}
       </div>
     </Router>
   );

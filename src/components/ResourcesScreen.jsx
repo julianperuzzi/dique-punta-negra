@@ -14,7 +14,7 @@ function ResourcesScreen() {
   return (
     <div className="py-12 px-2 text-black dark:text-white min-h-screen flex items-center justify-center">
       <div className="container mx-auto" data-aos="fade-up">
-        <h2 className="text-5xl font-bold mb-10 text-center text-gray-900 dark:text-white">
+        <h2 className="text-4xl font-bold mb-10 text-center text-gray-900 dark:text-white">
           Conoce Más
         </h2>
 

@@ -8,6 +8,9 @@ import ParadoresScreen from '../components/ParadoresScreen';
 import ResourcesScreen from '../components/ResourcesScreen';
 import SafetySection from '../components/SafetySection';
 import PresentationScreen from '../components/PresentationScreen';
+import MiniBanner from '../components/MiniBanner';
+import FeaturedActivities from '../components/FeaturedActivities';
+
 
 function Inicio() {
   useEffect(() => {
@@ -15,12 +18,18 @@ function Inicio() {
   }, []);
 
   return (
-    <div className="flex flex-col bg-gradient-to-br from-gray-300 via-gray-100/50 to-gray-200 dark:bg-gradient-to-tr dark:from-gray-800 dark:via-gray-700 dark:to-gray-900 ">
+    <div className="flex flex-col bg-gradient-to-br from-gray-300 via-gray-100/50 to-gray-200 dark:bg-gradient-to-tr dark:from-gray-800 dark:via-gray-700 dark:to-gray-900">
       {/* Pantalla de Presentación */}
       <PresentationScreen/>
+      <MiniBanner/>
 
+      <FeaturedActivities/>
+      <span className='border-t border-gray-400/60 mx-8'></span>
       {/* Información de Actividades */}
       <ActivitiesScreen />
+      
+
+
       <span className='border-t border-gray-400/60 mx-8'></span>
 
       {/* Recursos */}
