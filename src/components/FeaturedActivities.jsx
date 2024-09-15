@@ -27,8 +27,8 @@ const PrestadoresCarousel = ({ swiperConfig }) => {
   const mergedConfig = { ...defaultConfig, ...swiperConfig };
 
   return (
-    <div className="w-full py-10 md:py-20 relative justify-center bg-gradient-to-tr from-teal-400 via-teal-600 to-teal-300">
-      <h3 className="text-4xl text-center md:mb-10 mb-4 text-white">Destacados ✨</h3>
+    <div className="w-full py-10 md:py-20 relative justify-center ">
+      <h3 className="text-4xl text-center md:mb-10 mb-4 ">Destacados ✨</h3>
       <div className="container mx-auto px-2">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]} // Agrega el módulo Autoplay
