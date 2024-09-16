@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Navigation, Pagination, Autoplay } from "swiper/modules"; // Importa el módulo Autoplay
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import prestadores from "../data/prestadores"; // Asegúrate de que la ruta sea correcta
 
 const PrestadoresCarousel = ({ swiperConfig }) => {
@@ -27,8 +27,9 @@ const PrestadoresCarousel = ({ swiperConfig }) => {
   const mergedConfig = { ...defaultConfig, ...swiperConfig };
 
   return (
-    <div className="w-full py-10 md:py-20 relative justify-center ">
-      <h3 className="text-4xl text-center md:mb-10 mb-4 ">Destacados ✨</h3>
+
+          <div className="w-full py-10 md:py-20 relative justify-center bg-gradient-to-b from-teal-600 via-teal-300 ">
+      <h3 className="text-4xl text-center md:mb-10 mb-4 text-white ">Destacados ✨</h3>
       <div className="container mx-auto px-2">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]} // Agrega el módulo Autoplay
@@ -100,6 +101,7 @@ const PrestadoresCarousel = ({ swiperConfig }) => {
         </div>
       </div>
     </div>
+
   );
 };
 
