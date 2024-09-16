@@ -22,7 +22,6 @@ function Inicio() {
       {/* Pantalla de Presentación */}
       <PresentationScreen/>
       <MiniBanner/>
-
       <FeaturedActivities/>
       <span className='border-t border-gray-400/60 mx-8'></span>
       {/* Información de Actividades */}
