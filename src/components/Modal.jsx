@@ -11,7 +11,30 @@ import {
   FaMapMarkerAlt,
   FaWhatsapp,
   FaTimes,
+  FaStar,
 } from "react-icons/fa";
+
+// Simulación de comentarios y reseñas
+const reviews = [
+  {
+    name: "Juan Pérez",
+    rating: 5,
+    comment: "Excelente servicio y atención, ¡lo recomiendo al 100%!",
+    date: "15 de Septiembre, 2023",
+  },
+  {
+    name: "Ana Rodríguez",
+    rating: 4,
+    comment: "Muy buena experiencia, los mejores de San Juan",
+    date: "10 de Septiembre, 2023",
+  },
+  {
+    name: "Carlos García",
+    rating: 5,
+    comment: "Increíble lugar, volveré sin duda.",
+    date: "5 de Septiembre, 2023",
+  },
+];
 
 function Modal({ isOpen, onClose, prestador }) {
   const modalRef = useRef(null);
@@ -121,7 +144,7 @@ function Modal({ isOpen, onClose, prestador }) {
               href={prestador.location}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center bg-blue-500 hover:bg-blue-700 text-white px-4 py-2  shadow-md space-x-2"
+              className="flex items-center justify-center bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 shadow-md space-x-2"
             >
               <FaMapMarkerAlt />
               <span>Ver Ubicación</span>
@@ -130,7 +153,7 @@ function Modal({ isOpen, onClose, prestador }) {
               href={prestador.socialMedia.instagram}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center bg-gradient-to-tr from-pink-500 via-red-500 to-yellow-500 text-white px-4 py-2  shadow-md space-x-2"
+              className="flex items-center justify-center bg-gradient-to-tr from-pink-500 via-red-500 to-yellow-500 text-white px-4 py-2 shadow-md space-x-2"
             >
               <FaInstagram />
               <span>Instagram</span>
@@ -139,14 +162,14 @@ function Modal({ isOpen, onClose, prestador }) {
               href={prestador.socialMedia.facebook}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center bg-blue-600 hover:bg-blue-800 text-white px-4 py-2  shadow-md space-x-2"
+              className="flex items-center justify-center bg-blue-600 hover:bg-blue-800 text-white px-4 py-2 shadow-md space-x-2"
             >
               <FaFacebook />
               <span>Facebook</span>
             </a>
             <a
               href={`tel:${prestador.phone}`}
-              className="flex items-center justify-center bg-gray-500 hover:bg-gray-700 text-white px-4 py-2  shadow-md space-x-2"
+              className="flex items-center justify-center bg-gray-500 hover:bg-gray-700 text-white px-4 py-2 shadow-md space-x-2"
             >
               <FaPhone />
               <span>Llamar</span>
@@ -165,8 +188,38 @@ function Modal({ isOpen, onClose, prestador }) {
             </a>
           </div>
 
+          {/* Sección de Comentarios y Reseñas */}
+          <div className="mt-10 border-t pt-6">
+            <h4 className="text-2xl font-bold text-gray-800 mb-6">
+              Comentarios y Reseñas
+            </h4>
+            <div className="space-y-6">
+              {reviews.map((review, index) => (
+                <div key={index} className="bg-gray-50 p-4 rounded-lg shadow-md">
+                  <div className="flex justify-between items-center mb-2">
+                    <h5 className="text-xl font-semibold text-teal-600">
+                      {review.name}
+                    </h5>
+                    <div className="flex items-center">
+                      {[...Array(5)].map((star, i) => (
+                        <FaStar
+                          key={i}
+                          className={`${
+                            i < review.rating ? "text-yellow-500" : "text-gray-300"
+                          }`}
+                        />
+                      ))}
+                    </div>
+                  </div>
+                  <p className="text-gray-600">{review.comment}</p>
+                  <p className="text-gray-400 text-sm">{review.date}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
           {/* Mensaje Adicional */}
-          <div className="mt-8 text-center text-gray-600">
+          <div className="my-8 text-center text-gray-600 border-b-2 border-teal-500">
             <p>
               Para más información, comunícate por los canales oficiales de Turismo San Juan.
             </p>
