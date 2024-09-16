@@ -17,7 +17,7 @@ function PresentationScreen() {
   }, []);
 
   return (
-    <section className="relative w-full h-[85vh] ">
+    <section className="relative w-full h-[85vh] md:h-[90vh] ">
       {/* Video de fondo */}
       <video
         src={video}
@@ -28,8 +28,8 @@ function PresentationScreen() {
       ></video>
 
       {/* Contenido superpuesto */}
-      <section className="bg-black bg-opacity-30 dark:bg-opacity-80 backdrop-blur-sm  h-[85vh]  flex flex-col items-center justify-center relative ">
-        <div className="text-left text-white  relative z-10 pl-4">
+      <section className="bg-black bg-opacity-30 dark:bg-opacity-80 backdrop-blur-sm h-[85vh] md:h-[90vh] flex flex-col items-center justify-center relative ">
+        <div className="text-left text-white  relative z-10 pl-4 md:w-8/12">
         <p
             className="text-lg md:text-xl mb-4"
             data-aos="fade-up"
@@ -48,12 +48,12 @@ function PresentationScreen() {
           
           {/* Box para explorar actividades */}
           <div
-            className="mt-10 text-left flex flex-row items-center "
+            className="md:mt-10 mt-2 text-left flex flex-row md:items-center items-end md:w-8/12 justify-around pl-4 "
             data-aos="fade-up"
             data-aos-delay="400"
           >
             <div>
-            <h3 className="md:text-2xl text-xl font-bold text-white mb-4">¿Qué te gustaría hacer?</h3>
+            <h3 className="md:text-2xl text-xl font-bold text-white mb-2">¿Qué te gustaría hacer?</h3>
             <p className="text-lg text-gray-200 mb-6">
               Explora todas las Actividades
             </p>
@@ -66,7 +66,7 @@ function PresentationScreen() {
             </div>
             {/* Widget del clima */}
           <div
-            className=" text-center relative z-10 w-20 md:w-40 mx-auto"
+            className=" text-center relative z-10 w-20  mx-auto"
             data-aos="fade-up"
             data-aos-delay="300"
           >
