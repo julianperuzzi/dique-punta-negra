@@ -121,7 +121,7 @@ function PresentationScreen() {
           {filteredPrestadores.map((prestador) => (
             <div
               key={prestador.id}
-              className=" absolute bg-white p-1  shadow-md w-1/2 cursor-pointer text-left font-extralight text-xs z-30"
+              className=" absolute bg-white p-1 shadow-md w-10/12 md:w-1/2 cursor-pointer text-left font-extralight text-xs z-30"
               onClick={() => handlePrestadorClick(prestador)}
             >
               <h3 className="text-lg font-normal">{prestador.name}</h3>
