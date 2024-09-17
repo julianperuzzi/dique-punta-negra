@@ -43,7 +43,10 @@ function PresentationScreen() {
       );
     });
 
-    setFilteredPrestadores(filtered);
+    // Limitar a un máximo de 3 resultados
+    const limitedResults = filtered.slice(0, 3);
+
+    setFilteredPrestadores(limitedResults);
   }, [searchTerm]);
 
   const handlePrestadorClick = (prestador) => {
@@ -102,7 +105,7 @@ function PresentationScreen() {
           </Link>
         </div>
 
-        <div className="mt-10 w-full flex flex-row items-center justify-center space-x-2">
+        <div className="mt-10 w-full flex flex-row items-center justify-center ">
           <input
             type="text"
             placeholder="Buscar Prestadores o Actividades..."
@@ -112,7 +115,7 @@ function PresentationScreen() {
           />
         </div>
 
-        <div className="mt-6 w-full flex flex-col items-center">
+        <div className="mt-1 w-full flex flex-col items-center t">
           {filteredPrestadores.length === 0 && searchTerm.trim() !== '' && (
             <p className="text-gray-100">
               No se encontraron resultados para "{searchTerm}"
@@ -121,7 +124,7 @@ function PresentationScreen() {
           {filteredPrestadores.map((prestador) => (
             <div
               key={prestador.id}
-              className=" absolute bg-white p-1 shadow-md w-10/12 md:w-1/2 cursor-pointer text-left font-extralight text-xs z-30"
+              className="bg-white p-1 mb-1 shadow-md w-10/12 md:w-1/2 cursor-pointer text-left font-extralight text-xs z-30"
               onClick={() => handlePrestadorClick(prestador)}
             >
               <h3 className="text-lg font-normal">{prestador.name}</h3>
