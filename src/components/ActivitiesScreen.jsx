@@ -29,7 +29,7 @@ function ActivitiesScreen() {
           Actividades
         </h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-6 md:gap-6 gap-2">
+        <div className="grid grid-cols-2 md:grid-cols-6 md:gap-4 gap-2">
           {activities.map((activity, index) => (
             <Link 
               key={index} 
