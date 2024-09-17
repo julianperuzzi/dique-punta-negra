@@ -15,6 +15,7 @@ import NotFound from './pages/NotFound';
 
 import SeguridadNautica from './pages/SeguridadNautica';
 import Paradores from './pages/Paradores';
+import PrestadoresPlanes from './pages/PrestadoresPlanes';
 
 
 
@@ -40,6 +41,7 @@ function App() {
             <Route path='/SeguridadNautica' element={<SeguridadNautica />} />
             <Route path="/Paradores" element={<Paradores />} />
             <Route path='/*' element={<NotFound/>} />
+            <Route path='/Precios' element={<PrestadoresPlanes/>} />
 
           </Routes>
         

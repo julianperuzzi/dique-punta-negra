@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom'; // Import Link for navigation
 import 'aos/dist/aos.css'; // Import AOS styles
-import AOS from 'aos'; // Import AOS
+import AOS from 'aos'; // Import AOS for animations
 
 // Sample paradores data with image URLs
 const paradores = [
@@ -33,11 +33,11 @@ const paradores = [
 ];
 
 function ParadoresScreen() {
-  // Initialize AOS
-  React.useEffect(() => {
+  // Initialize AOS for scroll animations
+  useEffect(() => {
     AOS.init({
-      duration: 1000,
-      once: true, // Animations happen only once
+      duration: 1000, // Animation duration
+      once: true, // Ensure animations only happen once
     });
   }, []);
 
@@ -47,6 +47,10 @@ function ParadoresScreen() {
         <h2 className="text-4xl mb-6 text-center text-gray-900 dark:text-white" data-aos="fade-up">
           Paradores
         </h2>
+        <Link
+            to="/Paradores"
+
+          >
         <div className="flex flex-col justify-center mx-2 md:mx-0 my-8">
           {paradores.map((parador, index) => (
             <div
@@ -58,20 +62,22 @@ function ParadoresScreen() {
               <img
                 src={parador.image}
                 alt={parador.title}
-                className="w-full md:w-1/2 md:h-72 h-32  object-cover"
+                className="w-full md:w-1/2 md:h-56 h-32 object-cover"
               />
-              <div className=" w-full md:w-1/2 my-2 md:my-0">
-                <h3 className=" pl-6 text-2xl font-semibold md:mb-4 text-gray-900 dark:text-white">{parador.title}</h3>
-                <p className=" pl-6 text-gray-700 dark:text-gray-300">{parador.description}</p>
+              <div className="w-full md:w-1/2 my-2 md:my-0">
+                <h3 className="pl-6 text-2xl font-semibold md:mb-4 text-gray-900 dark:text-white">
+                  {parador.title}
+                </h3>
+                <p className="pl-6 text-gray-700 dark:text-gray-300">{parador.description}</p>
               </div>
             </div>
           ))}
-        </div>
-        {/* Button to go to the Paradores page */}
+        </div></Link>
+        {/* Button to navigate to the Paradores page */}
         <div className="mt-16 text-center">
           <Link
-            to="/paradores"
-            className="inline-block bg-gray-700 text-white px-6 py-3 shadow-md hover:bg-gray-900 transition duration-300 ease-in-out"
+            to="/Paradores"
+            className="inline-block bg-teal-600 text-white px-6 py-3 shadow-md hover:bg-gray-900 transition duration-300 ease-in-out"
           >
             Ver Información Completa
           </Link>

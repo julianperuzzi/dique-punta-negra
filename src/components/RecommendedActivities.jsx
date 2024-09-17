@@ -7,7 +7,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import prestadores from "../data/prestadores"; // Asegúrate de que la ruta sea correcta
 import Modal from "./Modal"; // Importa el componente Modal
 
-const PrestadoresCarousel = ({ swiperConfig }) => {
+const RecommendedActivities = ({ swiperConfig }) => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedPrestador, setSelectedPrestador] = useState(null);
 
@@ -29,7 +29,7 @@ const PrestadoresCarousel = ({ swiperConfig }) => {
 
   const mergedConfig = { ...defaultConfig, ...swiperConfig };
 
-  const prestadoresFiltrados = prestadores.filter(prestador => prestador.recommendationLevel === 1);
+  const prestadoresFiltrados = prestadores.filter(prestador => prestador.recommendationLevel === 1 ||prestador.recommendationLevel === 2 );
 
   const handleOpenModal = (prestador) => {
     setSelectedPrestador(prestador);
@@ -42,8 +42,8 @@ const PrestadoresCarousel = ({ swiperConfig }) => {
   };
 
   return (
-    <div className="w-full py-10 md:py-20 relative justify-center bg-gradient-to-b from-teal-600 via-teal-300 ">
-      <h3 className="text-4xl text-center md:mb-10 mb-4 text-white ">Destacados ✨</h3>
+    <div className="w-full py-10 md:py-20 relative justify-center">
+      <h3 className="text-2xl text-center md:mb-10 mb-4 text-gray-600 ">Nuestros Recomendamos </h3>
       <div className="container mx-auto px-2">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
@@ -57,10 +57,10 @@ const PrestadoresCarousel = ({ swiperConfig }) => {
           {prestadoresFiltrados.map((prestador) => (
             <SwiperSlide key={prestador.id}>
               <div 
-                className="flex flex-col bg-white shadow-lg overflow-hidden transition-transform transform rounded-lg cursor-pointer"
+                className="flex flex-col bg-white shadow-lg overflow-hidden transition-transform transform rounded-lg cursor-pointer mb-4"
                 onClick={() => handleOpenModal(prestador)}
               >
-                <div className="h-48">
+                <div className="h-36">
                   <img
                     src={prestador.images[0]}
                     alt={prestador.name}
@@ -107,4 +107,4 @@ const PrestadoresCarousel = ({ swiperConfig }) => {
   );
 };
 
-export default PrestadoresCarousel;
+export default RecommendedActivities;

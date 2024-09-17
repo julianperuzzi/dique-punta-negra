@@ -105,26 +105,27 @@ function PresentationScreen() {
         <div className="mt-10 w-full flex flex-row items-center justify-center space-x-2">
           <input
             type="text"
-            placeholder="Buscar prestadores o servicios..."
+            placeholder="Buscar Prestadores o Actividades..."
             value={searchTerm}
             onChange={handleInputChange}
-            className="p-2 rounded-lg w-1/2 text-center "
+            className="p-2 rounded-lg md:w-1/2 w-10/12 text-center "
           />
         </div>
 
         <div className="mt-6 w-full flex flex-col items-center">
           {filteredPrestadores.length === 0 && searchTerm.trim() !== '' && (
-            <p className="text-gray-500">
+            <p className="text-gray-100">
               No se encontraron resultados para "{searchTerm}"
             </p>
           )}
           {filteredPrestadores.map((prestador) => (
             <div
               key={prestador.id}
-              className="bg-white p-4 rounded-lg shadow-md w-1/2 mb-4 cursor-pointer text-center"
+              className=" absolute bg-white p-1  shadow-md w-1/2 cursor-pointer text-left font-extralight text-xs z-30"
               onClick={() => handlePrestadorClick(prestador)}
             >
-              <h3 className="text-xl font-bold">{prestador.name}</h3>
+              <h3 className="text-lg font-normal">{prestador.name}</h3>
+              <p className='font-bold'>{prestador.services.join(", ")}</p>
               <p>{prestador.description}</p>
             </div>
           ))}

@@ -5,6 +5,15 @@ import { FaWhatsapp, FaPhone, FaEnvelope, FaInfoCircle } from "react-icons/fa";
 function PrestadorCard({ prestador, onOpenModal }) {
   return (
     <div className="bg-white dark:bg-gray-800 shadow-lg p-6 flex flex-col justify-between transition-transform transform hover:scale-105 duration-200 relative border-l-4 border-teal-600">
+
+      <div className="h-24 realtive ">
+                  <img
+                    src={prestador.images[0]}
+                    alt={prestador.name}
+                    className="object-cover h-full w-full"
+                  />
+                </div>
+
       <h3 className="text-2xl font-bold md:mb-2 text-orange-500 dark:text-white uppercase">
         {prestador.name}
       </h3>

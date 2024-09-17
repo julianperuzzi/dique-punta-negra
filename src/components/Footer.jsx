@@ -10,15 +10,15 @@ import {
 const Footer = () => {
   // Textos en español
   const texts = {
-    name: "Desarrollado por Julian Peruzzi",
+    name: "Desarrollado por Julian Peruzzi .dev",
     description:
-      "Desarrollador apasionado por crear experiencias web innovadoras y funcionales.",
+      "En JulianPeruzzi.dev  nos centramos en crear experiencias web innovadoras y funcionales.",
     contactTitle: "Contacto",
     location: "San Juan, Argentina",
     phone: "Teléfono: +54 9 2645 636968",
     email: "Email: julianperuzzi.dev@gmail.com",
     followTitle: "Sígueme",
-    additionalInfo: "Este proyecto es una iniciativa propia que busca colaborar con prestadores locales para ofrecer sus servicios, mejorando la experiencia del turismo en San Juan.",
+    additionalInfo: "Este proyecto es una iniciativa que busca colaborar con prestadores locales para ofrecer sus servicios, mejorando la experiencia del turismo en San Juan.",
     disclaimer: "La información de este sitio no se contempla como información oficial ni de difusión de organismos competentes. Si necesitas asesoramiento oficial, comunícate a los medios pertinentes.",
     copyright: "Todos los derechos reservados.",
   };

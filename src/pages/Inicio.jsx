@@ -10,6 +10,8 @@ import SafetySection from '../components/SafetySection';
 import PresentationScreen from '../components/PresentationScreen';
 import MiniBanner from '../components/MiniBanner';
 import FeaturedActivities from '../components/FeaturedActivities';
+import CounterBanner from '../components/CounterBanner';
+import RecommendedActivities from '../components/RecommendedActivities';
 
 
 function Inicio() {
@@ -25,14 +27,13 @@ function Inicio() {
       <FeaturedActivities/>
       <span className='border-t border-gray-400/60 mx-8'></span>
       {/* Información de Actividades */}
+      <CounterBanner/>
       <ActivitiesScreen />
       
 
 
       <span className='border-t border-gray-400/60 mx-8'></span>
-
-
-
+      
 
       {/* Información de Paradores */}
       <ParadoresScreen />
