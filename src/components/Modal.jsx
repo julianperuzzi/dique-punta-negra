@@ -37,16 +37,16 @@ function Modal({ isOpen, onClose, prestador }) {
   return (
     <div
       onClick={handleOutsideClick}
-      className="fixed inset-0 bg-black/50 bg-opacity-50 flex justify-center items-center z-50 backdrop-blur-md shadow-xl overflow-y-auto py-2"
+      className="fixed  inset-0 bg-black/50 bg-opacity-50 flex justify-center items-center z-50 backdrop-blur-md shadow-xl overflow-y-auto py-2 "
     >
       <div
         ref={modalRef}
-        className="bg-white shadow-lg relative w-11/12 md:w-9/12 md:max-h-[95vh] h-full overflow-y-auto rounded-lg"
+        className="bg-white shadow-lg relative w-11/12 md:w-9/12 md:max-h-[95vh] h-full overflow-y-auto rounded-lg "
       >
         <button
           onClick={onClose}
-          className="absolute top-2 right-2 text-teal-600 hover:text-red-500 z-10 backdrop-blur-xl p-2"
-        >
+          className="fixed top-2 right-0 bg-white/70 text-teal-700 hover:text-red-500 z-10 backdrop-blur-xl p-2 rounded-l-full flex flex-row border-y-2 border-l-2 border-teal-600"
+        > Cerrar
           <FaTimes size={24} />
         </button>
 
