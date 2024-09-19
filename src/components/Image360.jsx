@@ -13,7 +13,7 @@ const Image360 = () => {
       panorama: img360, // URL de tu imagen 360
       autoLoad: true,
       pitch: 10,
-      yaw: 180,
+      yaw: 0,
       hfov: 110,
       showZoomCtrl: false, // Desactiva los controles de zoom visibles
     });
@@ -26,7 +26,7 @@ const Image360 = () => {
     };
   }, []);
 
-  return <div ref={pannellumRef} className="w-full md:h-72 h-64"></div>;
+  return <div ref={pannellumRef} className="w-full md:h-72 h-64 border-y-4  border-teal-600"></div>;
 };
 
 export default Image360;
