@@ -12,6 +12,7 @@ import MiniBanner from '../components/MiniBanner';
 import FeaturedActivities from '../components/FeaturedActivities';
 import CounterBanner from '../components/CounterBanner';
 import RecommendedActivities from '../components/RecommendedActivities';
+import Image360 from '../components/Image360';
 
 
 function Inicio() {
@@ -43,6 +44,7 @@ function Inicio() {
        {/* Recursos */}
        <ResourcesScreen />
       <span className='border-t border-gray-400/60 mx-8'></span>
+      <Image360/>
 
       
 

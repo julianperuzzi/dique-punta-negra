@@ -23,7 +23,7 @@ function ActivitiesScreen() {
   }, []);
 
   return (
-    <div className="md:min-h-[20vh] min-h-screen flex items-center relative mb-10 md:mb-24 md:mt-10">
+    <div className="md:min-h-[20vh] min-h-screen flex  relative mb-10 md:mb-24 md:mt-10 w-full">
       <div className="container mx-auto relative md:px-4 px-2">
         <h2 className="text-4xl  my-10 text-center text-gray-900" data-aos="fade-up">
           Actividades

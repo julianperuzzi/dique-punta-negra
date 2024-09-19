@@ -106,16 +106,17 @@ function PresentationScreen() {
         </div>
 
         <div className="mt-10 w-full flex flex-row items-center justify-center ">
-          <input
-            type="text"
-            placeholder="Buscar Prestadores o Actividades..."
-            value={searchTerm}
-            onChange={handleInputChange}
-            className="p-2 rounded-lg md:w-1/2 w-10/12 text-center "
+        <input
+           type="text"
+             placeholder="Buscar Prestadores o Actividades..."
+             value={searchTerm}
+             onChange={handleInputChange}
+            className="p-2 rounded-lg md:w-1/2 w-10/12 text-center border-gray-300 focus:outline-none focus:border-teal-500 transition-colors border-4"
           />
+
         </div>
 
-        <div className="mt-1 w-full flex flex-col items-center t">
+        <div className="mt-1 w-full flex flex-col items-center ">
           {filteredPrestadores.length === 0 && searchTerm.trim() !== '' && (
             <p className="text-gray-100">
               No se encontraron resultados para "{searchTerm}"
@@ -124,12 +125,11 @@ function PresentationScreen() {
           {filteredPrestadores.map((prestador) => (
             <div
               key={prestador.id}
-              className="bg-white p-1 mb-1 shadow-md w-10/12 md:w-1/2 cursor-pointer text-left font-extralight text-xs z-30"
+              className="bg-slate-100 p-1 mb-1 shadow-md w-10/12 md:w-1/2 cursor-pointer text-left font-extralight text-xs z-30 md:text-center"
               onClick={() => handlePrestadorClick(prestador)}
             >
-              <h3 className="text-lg font-normal">{prestador.name}</h3>
-              <p className='font-bold'>{prestador.services.join(", ")}</p>
-              <p>{prestador.description}</p>
+              <h3 className="text-lg font-normal text-teal-700">{prestador.name}</h3>
+              <p className='font-bold text-gray-600'>{prestador.services.join(" - ")}</p>
             </div>
           ))}
         </div>
