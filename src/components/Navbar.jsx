@@ -76,6 +76,12 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                 >
                   Clima
                 </Link>
+                <Link
+                  to="/PuntaNegra360"
+                  className="block text-orange-500 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 px-4 py-2 transition duration-300"
+                >
+                  Punta Negra 360
+                </Link>
                 {/* Agrega más enlaces aquí */}
               </div>
             )}
@@ -125,6 +131,13 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                 onClick={() => setIsOpen(false)}
               >
                 Clima
+              </Link>
+              <Link
+                to="/PuntaNegra360"
+                className="text-white dark:text-orange-200 hover:text-orange-100 dark:hover:text-orange-300 transition duration-300 px-4 py-2 hover:bg-gray-700"
+                onClick={() => setIsOpen(false)}
+              >
+                Punta Negra 360
               </Link>
             </div>
           </div>

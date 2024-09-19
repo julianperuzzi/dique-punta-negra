@@ -16,20 +16,13 @@ const Image360 = () => {
       yaw: 180,
       hfov: 110,
       showZoomCtrl: false, // Desactiva los controles de zoom visibles
-      disableZoom: true,  // Desactiva el zoom por los controles
     });
 
-    // Añade un manejador de eventos para deshabilitar el zoom con el scroll del mouse
-    const handleMouseWheel = (event) => {
-      event.preventDefault(); // Evita el zoom con el scroll
-    };
-
-    // Añade el manejador al contenedor del visor
-    pannellumRef.current.addEventListener('wheel', handleMouseWheel, { passive: false });
-
-    // Limpieza del efecto
+    // Limpieza del viewer al desmontar el componente
     return () => {
-      pannellumRef.current.removeEventListener('wheel', handleMouseWheel);
+      if (viewer) {
+        viewer.destroy(); // destruye la instancia de Pannellum al desmontar el componente
+      }
     };
   }, []);
 
