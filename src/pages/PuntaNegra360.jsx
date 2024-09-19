@@ -23,7 +23,7 @@ const PuntaNegra360 = () => {
         panorama: selectedImage,
         autoLoad: true,
         pitch: 10,
-        yaw: 180,
+        yaw: 0,
         hfov: 110,
       });
     }
@@ -40,7 +40,7 @@ const PuntaNegra360 = () => {
   return (
     <div className="flex flex-col items-center pt-24 mb-10">
       <div className="mb-6">
-        <h3 className="text-2xl font-bold mb-4">Selecciona una vista</h3>
+        <h3 className="text-2xl font-bold mb-4 text-center">Selecciona una vista</h3>
         <div className="flex space-x-4 overflow-x-auto pb-4 px-6">
           {images360.map((image) => (
             <div
@@ -62,7 +62,8 @@ const PuntaNegra360 = () => {
           ))}
         </div>
       </div>
-      <div className="w-full md:h-[50vh] h-96" ref={pannellumRef}></div>
+      <h3 className="text-2xl font-bold mb-4 text-center text-teal-700">Navega los Paisajes de Punta Negra</h3>
+      <div className="w-full md:h-[60vh] h-96 border-y-4 border-teal-600" ref={pannellumRef}></div>
     </div>
   );
 };
